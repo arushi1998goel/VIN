@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Complete Suite - Specific Browser]">
+  <test thread-count="5" verbose="5" name="Regression(failed)">
+    <parameter name="browser" value="${browser}"/>
+    <classes>
+      <class name="com.vin.testscripts.VeterinaryHappyPath">
+        <methods>
+          <include name="verifyVeterinaryHappyPath"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VeterinaryHappyPath -->
+      <class name="com.vin.testscripts.FrontPageScriptsHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+          <include name="frontPage"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.FrontPageScriptsHappyPath -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Complete Suite - Specific Browser] -->

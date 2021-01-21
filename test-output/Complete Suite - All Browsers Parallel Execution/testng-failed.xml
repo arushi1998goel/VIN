@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Complete Suite - All Browsers Parallel Execution]" parallel="tests">
+  <listeners>
+    <listener class-name="com.vin.report.TestCaseTrackingListners"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.vin.testscripts.CertificationAndHonorsHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifyCertificationAndHonorsHappyPath"/>
+          <include name="afterMainMethod"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.CertificationAndHonorsHappyPath -->
+      <class name="com.vin.testscripts.EnergyRequirementsHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+          <include name="EnergyRequirementsHappyPath"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.EnergyRequirementsHappyPath -->
+      <class name="com.vin.testscripts.PostGraduateTrainingHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="postGraduateTrainingHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.PostGraduateTrainingHappyPath -->
+      <class name="com.vin.testscripts.MyCEHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="getTestData"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="myCEHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyCEHappyPath -->
+      <class name="com.vin.testscripts.VINPromoPage">
+        <methods>
+          <include name="vinpromopage"/>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VINPromoPage -->
+      <class name="com.vin.testscripts.DrugDilution_FromHomePageHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="drugDilution_FromHomePage"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.DrugDilution_FromHomePageHappyPath -->
+      <class name="com.vin.testscripts.VINUsageHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="getTestData"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+          <include name="vinUsage"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VINUsageHappyPath -->
+      <class name="com.vin.testscripts.VINPromoPageStudentAcademia">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+          <include name="promoPageStudentAcademia"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VINPromoPageStudentAcademia -->
+      <class name="com.vin.testscripts.BoardsDraftHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="boardsDraft"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.BoardsDraftHappyPath -->
+      <class name="com.vin.testscripts.SearchHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifySearchHappyPath"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.SearchHappyPath -->
+      <class name="com.vin.testscripts.EchocardiogramHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="verifyEchocardiogramHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.EchocardiogramHappyPath -->
+      <class name="com.vin.testscripts.ValidLoginToVin">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="validLoginToVin"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.ValidLoginToVin -->
+      <class name="com.vin.testscripts.EmergencyDrugFeline">
+        <methods>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="emergencyDrugFeline"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.EmergencyDrugFeline -->
+      <class name="com.vin.testscripts.MyVINProfileemailAndwebsiteHappyPath">
+        <methods>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifyMyVINProfileemailAndwebsiteHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyVINProfileemailAndwebsiteHappyPath -->
+      <class name="com.vin.testscripts.CECourseInfoHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="VerifyCECourseInfo"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.CECourseInfoHappyPath -->
+      <class name="com.vin.testscripts.FrontPageScriptsHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+          <include name="frontPage"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.FrontPageScriptsHappyPath -->
+      <class name="com.vin.testscripts.DoseCalculatorHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="getTestData"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifyDoseCalculatorHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.DoseCalculatorHappyPath -->
+      <class name="com.vin.testscripts.SubscriptionsHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="subscriptionHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.SubscriptionsHappyPath -->
+      <class name="com.vin.testscripts.BoardsLanding">
+        <methods>
+          <include name="boardsLandingPage"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.BoardsLanding -->
+      <class name="com.vin.testscripts.LandingPagePrefOnePass">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="LandingPagePrefOnePass"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.LandingPagePrefOnePass -->
+      <class name="com.vin.testscripts.VVDHOnePass">
+        <methods>
+          <include name="getTestData"/>
+          <include name="VVDHOnePass"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VVDHOnePass -->
+      <class name="com.vin.testscripts.PublicNewsHappyPath">
+        <methods>
+          <include name="PublicNewsHappyPath"/>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.PublicNewsHappyPath -->
+      <class name="com.vin.testscripts.VeterinaryHappyPath">
+        <methods>
+          <include name="verifyVeterinaryHappyPath"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VeterinaryHappyPath -->
+      <class name="com.vin.testscripts.MyVINPreferencesGeneralOnePass">
+        <methods>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="VerifyMyVINPreferencesGeneralOnePass"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyVINPreferencesGeneralOnePass -->
+      <class name="com.vin.testscripts.VVDHHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="getTestData"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+          <include name="vVDh"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VVDHHappyPath -->
+      <class name="com.vin.testscripts.SignalmentHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+          <include name="signalment"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.SignalmentHappyPath -->
+      <class name="com.vin.testscripts.NewsHappyPath">
+        <methods>
+          <include name="verifyNewsHappyPath"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.NewsHappyPath -->
+      <class name="com.vin.testscripts.TransfusionVolumeHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="transfusionVolumeHappyPath"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.TransfusionVolumeHappyPath -->
+      <class name="com.vin.testscripts.MyActivitiesHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifyMyActivitiesHappyPath"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyActivitiesHappyPath -->
+      <class name="com.vin.testscripts.VINPromoPageOther">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="VINPromoPageOther"/>
+          <include name="afterMainMethod"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VINPromoPageOther -->
+      <class name="com.vin.testscripts.ProfileLicensureHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="VerifyProfileLicensureHappyPath"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.ProfileLicensureHappyPath -->
+      <class name="com.vin.testscripts.VSPNFrontPageHappyPath">
+        <methods>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifyVSPNFrontPageHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VSPNFrontPageHappyPath -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+  <test thread-count="2" verbose="2" name="Chrome Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.vin.testscripts.CertificationAndHonorsHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifyCertificationAndHonorsHappyPath"/>
+          <include name="afterMainMethod"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.CertificationAndHonorsHappyPath -->
+      <class name="com.vin.testscripts.FrontPageScriptsHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+          <include name="frontPage"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.FrontPageScriptsHappyPath -->
+      <class name="com.vin.testscripts.PostGraduateTrainingHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="postGraduateTrainingHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.PostGraduateTrainingHappyPath -->
+      <class name="com.vin.testscripts.SubscriptionsHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="subscriptionHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.SubscriptionsHappyPath -->
+      <class name="com.vin.testscripts.LandingPagePrefOnePass">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="LandingPagePrefOnePass"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.LandingPagePrefOnePass -->
+      <class name="com.vin.testscripts.VVDHOnePass">
+        <methods>
+          <include name="getTestData"/>
+          <include name="VVDHOnePass"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VVDHOnePass -->
+      <class name="com.vin.testscripts.MyCEHappyPath">
+        <methods>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="myCEHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyCEHappyPath -->
+      <class name="com.vin.testscripts.MyVINPreferencesGeneralOnePass">
+        <methods>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="VerifyMyVINPreferencesGeneralOnePass"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyVINPreferencesGeneralOnePass -->
+      <class name="com.vin.testscripts.DrugDilution_FromHomePageHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="drugDilution_FromHomePage"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.DrugDilution_FromHomePageHappyPath -->
+      <class name="com.vin.testscripts.VINUsageHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="getTestData"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+          <include name="vinUsage"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VINUsageHappyPath -->
+      <class name="com.vin.testscripts.VVDHHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="getTestData"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+          <include name="vVDh"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VVDHHappyPath -->
+      <class name="com.vin.testscripts.SignalmentHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+          <include name="signalment"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.SignalmentHappyPath -->
+      <class name="com.vin.testscripts.BoardsDraftHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="getTestData"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="boardsDraft"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.BoardsDraftHappyPath -->
+      <class name="com.vin.testscripts.NewsHappyPath">
+        <methods>
+          <include name="verifyNewsHappyPath"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.NewsHappyPath -->
+      <class name="com.vin.testscripts.SearchHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifySearchHappyPath"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.SearchHappyPath -->
+      <class name="com.vin.testscripts.MyActivitiesHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifyMyActivitiesHappyPath"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyActivitiesHappyPath -->
+      <class name="com.vin.testscripts.ValidLoginToVin">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="validLoginToVin"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.ValidLoginToVin -->
+      <class name="com.vin.testscripts.ProfileLicensureHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="VerifyProfileLicensureHappyPath"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.ProfileLicensureHappyPath -->
+      <class name="com.vin.testscripts.MyVINProfileemailAndwebsiteHappyPath">
+        <methods>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifyMyVINProfileemailAndwebsiteHappyPath"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyVINProfileemailAndwebsiteHappyPath -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Complete Suite - All Browsers Parallel Execution] -->

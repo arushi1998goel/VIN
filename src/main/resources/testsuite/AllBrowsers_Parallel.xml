@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Complete Suite - All Browsers Parallel Execution" verbose="2" parallel="tests" thread-count="2">
+
+
+    <listeners>
+        <listener class-name="com.vin.report.TestCaseTrackingListners"/>
+    </listeners>
+
+
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome"/>
+         <classes>
+            
+            <class name="com.vin.testscripts.BoardsDraftHappyPath"/> 
+            <class name="com.vin.testscripts.SignalmentHappyPath"/> 
+            <class name="com.vin.testscripts.RodenticideHappyPath"/>
+            <class name="com.vin.testscripts.VINPromoPage"/>          
+            <class name="com.vin.testscripts.LandingPagePrefOnePass"/>
+            <class name="com.vin.testscripts.VVDHOnePass"/>
+            <class name="com.vin.testscripts.EchocardiogramHappyPath"/>
+            <class name="com.vin.testscripts.SubscriptionsHappyPath"/>     
+            <class name="com.vin.testscripts.VVDHHappyPath"/> 
+            <class name="com.vin.testscripts.VINPromoPageStudentAcademia"/>  
+            <class name="com.vin.testscripts.BodySurfaceHappyPath"/>
+            <class name="com.vin.testscripts.FleaandTickProductFinderHappyPath"/>
+            <class name="com.vin.testscripts.ProfileLicensureHappyPath"/>
+            <class name="com.vin.testscripts.CalorieDistributionCalculatorHappyPath"/>
+            <class name="com.vin.testscripts.EnergyRequirementsHappyPath"/>
+            <class name="com.vin.testscripts.FreeWaterDeficitHappyPath"/>
+            <class name="com.vin.testscripts.GestationCatHappyPath"/>
+            <class name="com.vin.testscripts.FluidTherapyHappyPath"/>
+            <class name="com.vin.testscripts.TopicalTherapyHappyPath"/>
+            <class name="com.vin.testscripts.PremedicationDogDrugHappyPath"/>
+            <class name="com.vin.testscripts.PremedicationCatDrugHappyPath"/>
+            <class name="com.vin.testscripts.HeartwormHappyPath"/>
+            <class name="com.vin.testscripts.eVetSitesHappyPath"/>
+            <class name="com.vin.testscripts.VINxHappyPath"/>
+            <class name="com.vin.testscripts.PublicNewsHappyPath"/>
+            <class name="com.vin.testscripts.VINPromoPageOther"/>
+            <class name="com.vin.testscripts.CECourseInfoHappyPath"/>
+            <class name="com.vin.testscripts.MyActivitiesHappyPath"/>
+            <class name="com.vin.testscripts.MeanElectricalAxisHappyPath"/>
+            <class name="com.vin.testscripts.DiscussionViewerHappyPath"/>
+            <class name="com.vin.testscripts.IsleHappyPath"/>
+            <class name="com.vin.testscripts.GlucosePlotterDogHappyPath"/>
+            <class name="com.vin.testscripts.GlucosePlotterCatHappyPath"/>
+            <class name="com.vin.testscripts.VSPNFrontPageHappyPath"/>
+            <class name="com.vin.testscripts.MyVINPreferencesGeneralOnePass"/>
+            <class name="com.vin.testscripts.MyVINProfileemailAndwebsiteHappyPath"/> 
+            <class name="com.vin.testscripts.BoardsLanding"/>
+            <class name="com.vin.testscripts.ChocolateToxicityHappyPath"/>
+            <class name="com.vin.testscripts.CRIHappyPath"/>
+            <class name="com.vin.testscripts.DrugDilution_FromHomePageHappyPath"/>
+            <class name="com.vin.testscripts.EmergencyDrugCanine"/>
+            <class name="com.vin.testscripts.EmergencyDrugFeline"/>
+            <class name="com.vin.testscripts.FeedTubeHappyPath"/>
+            <class name="com.vin.testscripts.FrontPageScriptsHappyPath"/>            
+<!--             <class name="com.vin.testscripts.JournalsHappyPath"/>  -->
+            <class name="com.vin.testscripts.MyCEHappyPath"/>
+            <class name="com.vin.testscripts.MyColleaguesHappyPath"/> 
+<!--             <class name="com.vin.testscripts.MyStuffHappyPath"/> -->
+            <class name="com.vin.testscripts.NewsHappyPath"/> 
+            <class name="com.vin.testscripts.PhlebotomyVolumeCalculatorHappyPath"/>
+            <class name="com.vin.testscripts.PostGraduateTrainingHappyPath"/>            
+            <class name="com.vin.testscripts.SearchHappyPath"/>
+            <class name="com.vin.testscripts.StudentLoanSimHappyPath"/>
+            <class name="com.vin.testscripts.TransfusionVolumeHappyPath"/>
+            <class name="com.vin.testscripts.ValidLoginToVin"/>
+            <class name="com.vin.testscripts.VINUsageHappyPath"/>
+            <class name="com.vin.testscripts.Vindex"/> 
+<!--             <class name="com.vin.testscripts.PostAndReplyHappyPath"/> -->
+            <class name="com.vin.testscripts.EmergencyDrugCannineHappyPath"/>
+            <class name="com.vin.testscripts.EmergencyDrugFellineHappyPath"/>
+            <class name="com.vin.testscripts.NSAIDHappyPath"/>
+            <class name="com.vin.testscripts.eVetSitesHappyPath"/>
+            <class name="com.vin.testscripts.VeterinaryHappyPath"/>
+            <class name="com.vin.testscripts.DoseCalculatorHappyPath"/>
+            <class name="com.vin.testscripts.CertificationAndHonorsHappyPath"/>
+            <class name="com.vin.testscripts.BromideCalculatorNaBrHappyPath"/>
+            <class name="com.vin.testscripts.BromideCalculatorKBrHappyPath"/>
+<!--             <class name="com.vin.testscripts.NonInteractiveCourseMainPage"/> -->
+            <class name="com.vin.testscripts.MyVINProfileAddressHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfilePhoneAndFaxHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfileCertificationsAndHonorsHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfileInterestsHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileChangeNameHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileHappyPath"/>
+            <class name="com.vin.testscripts.MyProfilePostGraduateTrainingHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileEducationHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileLicensureHappyPath"/>
+            <class name="com.vin.testscripts.CourseMainPageHappyPath"/>
+            <class name="com.vin.testscripts.Presenter4Menu"/>
+            <class name="com.vin.testscripts.PreferencesEmailOnePass"/>
+            <class name="com.vin.testscripts.PreferencesSignatureOnePass"/>
+            <class name="com.vin.testscripts.PreferencesBoardsOnePass"/>
+            <class name="com.vin.testscripts.DocDeliveryHappyPath"/>
+            
+            
+         
+         
+   
+   
+            
+
+        </classes>
+    </test>
+
+
+    <test name="Firefox Test">
+        <parameter name="browser" value="firefox"/>
+         <classes>
+            
+            <class name="com.vin.testscripts.BoardsDraftHappyPath"/> 
+            <class name="com.vin.testscripts.SignalmentHappyPath"/> 
+            <class name="com.vin.testscripts.RodenticideHappyPath"/>
+            <class name="com.vin.testscripts.VINPromoPage"/>          
+            <class name="com.vin.testscripts.LandingPagePrefOnePass"/>
+            <class name="com.vin.testscripts.VVDHOnePass"/>
+            <class name="com.vin.testscripts.EchocardiogramHappyPath"/>
+            <class name="com.vin.testscripts.SubscriptionsHappyPath"/>     
+            <class name="com.vin.testscripts.VVDHHappyPath"/> 
+            <class name="com.vin.testscripts.VINPromoPageStudentAcademia"/>  
+            <class name="com.vin.testscripts.BodySurfaceHappyPath"/>
+            <class name="com.vin.testscripts.FleaandTickProductFinderHappyPath"/>
+            <class name="com.vin.testscripts.ProfileLicensureHappyPath"/>
+            <class name="com.vin.testscripts.CalorieDistributionCalculatorHappyPath"/>
+            <class name="com.vin.testscripts.EnergyRequirementsHappyPath"/>
+            <class name="com.vin.testscripts.FreeWaterDeficitHappyPath"/>
+            <class name="com.vin.testscripts.GestationCatHappyPath"/>
+            <class name="com.vin.testscripts.FluidTherapyHappyPath"/>
+            <class name="com.vin.testscripts.TopicalTherapyHappyPath"/>
+            <class name="com.vin.testscripts.PremedicationDogDrugHappyPath"/>
+            <class name="com.vin.testscripts.PremedicationCatDrugHappyPath"/>
+            <class name="com.vin.testscripts.HeartwormHappyPath"/>
+            <class name="com.vin.testscripts.eVetSitesHappyPath"/>
+            <class name="com.vin.testscripts.VINxHappyPath"/>
+            <class name="com.vin.testscripts.PublicNewsHappyPath"/>
+            <class name="com.vin.testscripts.VINPromoPageOther"/>
+            <class name="com.vin.testscripts.CECourseInfoHappyPath"/>
+            <class name="com.vin.testscripts.MyActivitiesHappyPath"/>
+            <class name="com.vin.testscripts.MeanElectricalAxisHappyPath"/>
+            <class name="com.vin.testscripts.DiscussionViewerHappyPath"/>
+            <class name="com.vin.testscripts.IsleHappyPath"/>
+            <class name="com.vin.testscripts.GlucosePlotterDogHappyPath"/>
+            <class name="com.vin.testscripts.GlucosePlotterCatHappyPath"/>
+            <class name="com.vin.testscripts.VSPNFrontPageHappyPath"/>
+            <class name="com.vin.testscripts.MyVINPreferencesGeneralOnePass"/>
+            <class name="com.vin.testscripts.MyVINProfileemailAndwebsiteHappyPath"/> 
+            <class name="com.vin.testscripts.BoardsLanding"/>
+            <class name="com.vin.testscripts.ChocolateToxicityHappyPath"/>
+            <class name="com.vin.testscripts.CRIHappyPath"/>
+            <class name="com.vin.testscripts.DrugDilution_FromHomePageHappyPath"/>
+            <class name="com.vin.testscripts.EmergencyDrugCanine"/>
+            <class name="com.vin.testscripts.EmergencyDrugFeline"/>
+            <class name="com.vin.testscripts.FeedTubeHappyPath"/>
+            <class name="com.vin.testscripts.FrontPageScriptsHappyPath"/>            
+<!--             <class name="com.vin.testscripts.JournalsHappyPath"/>  -->
+            <class name="com.vin.testscripts.MyCEHappyPath"/>
+            <class name="com.vin.testscripts.MyColleaguesHappyPath"/> 
+<!--             <class name="com.vin.testscripts.MyStuffHappyPath"/> -->
+            <class name="com.vin.testscripts.NewsHappyPath"/> 
+            <class name="com.vin.testscripts.PhlebotomyVolumeCalculatorHappyPath"/>
+            <class name="com.vin.testscripts.PostGraduateTrainingHappyPath"/>            
+            <class name="com.vin.testscripts.SearchHappyPath"/>
+            <class name="com.vin.testscripts.StudentLoanSimHappyPath"/>
+            <class name="com.vin.testscripts.TransfusionVolumeHappyPath"/>
+            <class name="com.vin.testscripts.ValidLoginToVin"/>
+            <class name="com.vin.testscripts.VINUsageHappyPath"/>
+            <class name="com.vin.testscripts.Vindex"/>
+<!--             <class name="com.vin.testscripts.PostAndReplyHappyPath"/> -->
+            <class name="com.vin.testscripts.EmergencyDrugCannineHappyPath"/>
+            <class name="com.vin.testscripts.EmergencyDrugFellineHappyPath"/>
+            <class name="com.vin.testscripts.NSAIDHappyPath"/>
+            <class name="com.vin.testscripts.eVetSitesHappyPath"/>
+            <class name="com.vin.testscripts.VeterinaryHappyPath"/>
+            <class name="com.vin.testscripts.DoseCalculatorHappyPath"/>
+            <class name="com.vin.testscripts.CertificationAndHonorsHappyPath"/>
+            <class name="com.vin.testscripts.BromideCalculatorNaBrHappyPath"/>
+            <class name="com.vin.testscripts.BromideCalculatorKBrHappyPath"/>
+<!--             <class name="com.vin.testscripts.NonInteractiveCourseMainPage"/> -->
+            <class name="com.vin.testscripts.MyVINProfileAddressHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfilePhoneAndFaxHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfileCertificationsAndHonorsHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfileInterestsHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileChangeNameHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileHappyPath"/>
+            <class name="com.vin.testscripts.MyProfilePostGraduateTrainingHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileEducationHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileLicensureHappyPath"/>
+            <class name="com.vin.testscripts.CourseMainPageHappyPath"/>
+            <class name="com.vin.testscripts.Presenter4Menu"/>
+            <class name="com.vin.testscripts.PreferencesEmailOnePass"/>
+            <class name="com.vin.testscripts.PreferencesSignatureOnePass"/>
+            <class name="com.vin.testscripts.PreferencesBoardsOnePass"/>
+            <class name="com.vin.testscripts.DocDeliveryHappyPath"/>
+            
+            
+         
+         
+            
+
+        </classes>
+    </test>
+</suite>

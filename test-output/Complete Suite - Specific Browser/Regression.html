@@ -1,0 +1,3477 @@
+<html>
+<head>
+<title>TestNG:  Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 17 12:07:43 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>7387 seconds (7387767 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vin.testscripts.LandingPagePrefOnePass.LandingPagePrefOnePass()'><b>LandingPagePrefOnePass</b><br>Test class: com.vin.testscripts.LandingPagePrefOnePass<br/>
+<a href="#Output-1669705853" onClick='toggleBox("Output-1669705853", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1669705853" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1669705853">
+
+1.1: Log in to VIN<br/>
+
+1.2: Login to VIN is successful<br/>
+
+2.1: Select 'MyVIN' from the navigation menu<br/>
+
+2.2: MyVIN' pop up window  is displayed <br/>
+
+3.1: Select 'Preferences'<br/>
+
+3.2: A drop down menu under Preferences is displayed<br/>
+
+4.1: Select 'Landing Page' from the Preferences drop down options.<br/>
+
+4.2: Landing Page is selected<br/>
+
+5.1: Select 'Student Center' from the drop down menu.<br/>
+
+5.2: Login Landing Page Preference is updated<br/>
+
+6.1: Select X to close MyVIN<br/>
+
+6.2: MyVIN pop up window is closed<br/>
+
+7.1: Log out of VIN<br/>
+
+7.2: Log out of VIN is successful<br/>
+
+8.1: Log in to VIN<br/>
+
+8.2: Login to VIN is successful<br/>
+
+9.1: Validate Landing is changed to Student Center<br/>
+
+9.2:Landing Page is updated<br/>
+
+10.1: Select 'MyVIN' from the navigation menu<br/>
+
+10.2: MyVIN' pop up window  is displayed <br/>
+
+11.1: Select 'Preferences'<br/>
+
+11.2: A drop down menu under Preferences is displayed<br/>
+
+12.1: Select 'Landing Page' from the Preferences drop down options.<br/>
+
+12.2: Landing Page is selected<br/>
+
+13.1: Select 'VIN Front Page' from the drop down menu.<br/>
+
+13.2: Login Landing Page Preference is updated<br/>
+
+14.1: Select X to close MyVIN<br/>
+
+14.2: MyVIN pop up window is closed<br/>
+
+15.1: Log out of VIN<br/>
+
+15.2: Log out of VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>145</td>
+<td>com.vin.testscripts.LandingPagePrefOnePass@4f638935</td></tr>
+<tr>
+<td title='com.vin.testscripts.RodenticideHappyPath.RodenticideHappyPath()'><b>RodenticideHappyPath</b><br>Test class: com.vin.testscripts.RodenticideHappyPath<br/>
+<a href="#Output-133177937" onClick='toggleBox("Output-133177937", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-133177937" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-133177937">
+
+1: Vin page loaded <br/>
+
+1.1: Navigate to: https://www.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=7920309<br/>
+
+1.2: Call login script<br/>
+
+1.3: User should be directed to Rodenticide Calculator<br/>
+
+1.4: Dismiss Alert Notification if displayed<br/>
+
+1.5: Pop up warning modal will display select ok<br/>
+
+2.1: Select dog for species<br/>
+
+2.2: Verify user is able to select species<br/>
+
+3.1: Enter weight in lbs<br/>
+
+3.2: Verify user is able to enter an amount<br/>
+
+4.1: Select Bromethalin radio button<br/>
+
+4.2: Verify user is able to select radio button<br/>
+
+5.1: Enter quantity of bait<br/>
+
+5.2: Verify user is able to enter amount<br/>
+
+6.1: Select oz from quantity of bait drop down<br/>
+
+6.2: Verify that oz can be selected from drop down<br/>
+
+7.1: Select <4 hours radio button<br/>
+
+7.2: Verify that <4 radio button can be selected<br/>
+
+7.3: Select Calculate<br/>
+
+7.4: Verify results are calculated below<br/>
+
+8.1: Select Reset<br/>
+
+8.2: Verify user is able to reset<br/>
+
+9.1: Select ok on 'Do you want to clear all your inputs?' modal<br/>
+
+9.2: Verify user is able to select ok and results are cleared<br/>
+
+10.1: Call logout script<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.vin.testscripts.RodenticideHappyPath@fdefd3f</td></tr>
+<tr>
+<td title='com.vin.testscripts.StudentLoanSimHappyPath.StudentLoanSimulator2yearRepayment()'><b>StudentLoanSimulator2yearRepayment</b><br>Test class: com.vin.testscripts.StudentLoanSimHappyPath<br/>
+<a href="#Output-228904713" onClick='toggleBox("Output-228904713", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-228904713" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-228904713">
+
+1.0: Bringing VIN  page<br/>
+
+1.1: Navigate to Student loan Sim beta.vin.com/studentdebtcenter/default.aspx?pid=14352&id=7578014<br/>
+
+1.2: Verify user is able to naviagate to Student Loan Simulator when selecting URL<br/>
+
+2.1: Select 2018 from Graduation Year drop down<br/>
+
+2.2:  Verify User is able to select 2018 from drop down.<br/>
+
+2.3  Verify Present Scenario Drop Down is removed.<br/>
+
+2.4  Verify Repayment Plan Drop Down is activated.<br/>
+
+2.5  Verify Years in Repayment Drop Down is Activated <br/>
+
+3.1 Select Standard 10 from Repayment Plan Drop Down <br/>
+
+3.2 Verify User is able to select Standard 10<br/>
+
+4.1:  Select 2 from Years in Repayment Drop Down <br/>
+
+4.2:  Verify User is able to select 2 <br/>
+
+5.1:	Click on  Run Sim button<br/>
+
+5.2: Verify User is able to select Rum Sim button.<br/>
+
+6.1:  Verify Loan Payment Summary table will populate with calculations<br/>
+
+6.2: Verify Forgiveness Planning Module will populate with calculations.<br/>
+
+7.1: Verify Total Loan Balance During Repayment table will populate.  <br/>
+
+8.1: Verify  Monthly Repayment Summary will display for the 6 loan types. <br/>
+
+9.1: Verify Loan Repayment Range of Minimum Monthly Payments (by period) table will populate.<br/>
+
+10.1: Verify Monthly Report Summary will display for the 6 loans types. <br/>
+
+11.1: Click on  Reset Button<br/>
+
+12.1:  Verify  Values are cleared.<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.vin.testscripts.StudentLoanSimHappyPath@a4102b8</td></tr>
+<tr>
+<td title='com.vin.testscripts.VVDHOnePass.VVDHOnePass()'><b>VVDHOnePass</b><br>Test class: com.vin.testscripts.VVDHOnePass<br/>
+<a href="#Output-1745462369" onClick='toggleBox("Output-1745462369", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1745462369" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1745462369">
+
+1.1: Log in to VIN<br/>
+
+1.2: Login to VIN is successful<br/>
+
+2.1: Select 'MyVIN' from the navigation menu<br/>
+
+2.2: MyVIN' pop up window  is displayed <br/>
+
+3.1: Select 'Preferences'<br/>
+
+3.2: A drop down menu under Preferences is displayed<br/>
+
+4.1: Select 'VVDH' from the Preferences drop down options.<br/>
+
+4.2: VVDH is selected<br/>
+
+5.1: Select the bubble next to Expand/show all sections.<br/>
+
+6.1: Select X to close MyVIN<br/>
+
+6.2: MyVIN pop up window is closed<br/>
+
+7.1: Select 'Library' from the navigation menu<br/>
+
+7.2: A Library Home and Quick Links pop up window is displayed<br/>
+
+8.1: Select 'VIN Veterinary Drug Handbook' link.<br/>
+
+8.2: VIN Veterinary Drug Handbook page is displayed <br/>
+
+9.1: Select 'A' under the Browse By section<br/>
+
+9.2: A page listing drugs that begin with 'A' is displayed<br/>
+
+10.1: Select 'Albumin' from the list<br/>
+
+10.2: Albumin monograph page is displayed<br/>
+
+11.1: Validate to make that all the sections on the drug monograph page are expanded.<br/>
+
+11.2: Display options for VVDH is updated<br/>
+
+11.2: Display options for VVDH is updated<br/>
+
+12.1: Select 'MyVIN' from the navigation menu<br/>
+
+12.2: MyVIN' pop up window  is displayed <br/>
+
+13.1: Select 'Preferences'<br/>
+
+13.2: A drop down menu under Preferences is displayed<br/>
+
+14.1: Select 'VVDH' from the Preferences drop down options.<br/>
+
+14.2: VVDH is selected<br/>
+
+15.1: Select the bubble next to Collapse/hide all sections all sections.<br/>
+
+16.1: Select X to close MyVIN<br/>
+
+16.2: MyVIN pop up window is closed<br/>
+
+17.1: Select 'Library' from the navigation menu<br/>
+
+17.2: A Library Home and Quick Links pop up window is displayed<br/>
+
+18.1: Select 'VIN Veterinary Drug Handbook' link.<br/>
+
+18.2: VIN Veterinary Drug Handbook page is displayed <br/>
+
+19.1: Select 'A' under the Browse By section<br/>
+
+19.2: A page listing drugs that begin with 'A' is displayed<br/>
+
+20.1: Select 'Albumin' from the list<br/>
+
+20.2: Albumin monograph page is displayed<br/>
+
+21.1: Validate to make that all the sections on the drug monograph page are collapsed and hidden.<br/>
+
+21.2: Display options for VVDH is updated<br/>
+
+22.1: Select 'MyVIN' from the navigation menu<br/>
+
+22.2: MyVIN' pop up window  is displayed <br/>
+
+23.1: Select 'Preferences'<br/>
+
+23.2: A drop down menu under Preferences is displayed<br/>
+
+24.1: Select 'VVDH' from the Preferences drop down options.<br/>
+
+24.2: VVDH is selected<br/>
+
+25.1: Select the bubble next to VIN Default.<br/>
+
+26.1: Select X to close MyVIN<br/>
+
+26.2: MyVIN pop up window is closed<br/>
+
+27.1: Log out of VIN<br/>
+
+27.2: Log out of VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>143</td>
+<td>com.vin.testscripts.VVDHOnePass@4387b79e</td></tr>
+<tr>
+<td title='com.vin.testscripts.BoardsDraftHappyPath.boardsDraft()'><b>boardsDraft</b><br>Test class: com.vin.testscripts.BoardsDraftHappyPath<br/>
+<a href="#Output-1744579245" onClick='toggleBox("Output-1744579245", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1744579245" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1744579245">
+
+1.1: verify VIN Promo page is loaded (Title: Veterinary Information Network®, Inc. – VIN)<br/>
+
+1.2: Select the LOGIN button<br/>
+
+1.3: Verify login page is displayed (Title: Login)<br/>
+
+1.4: Log in to the Portal <br/>
+
+1.5: Verify Security Question Page displayed (Title: VIN – Security Question)<br/>
+
+1.6: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.7: Verify Front Page displayed (Title: Front Page – VIN)<br/>
+
+1.8 Dismiss Notifications<br/>
+
+2.1: Select 'Message Boards' from the toolbar<br/>
+
+2.2: Dismiss Notifications if isplayed <br/>
+
+3.1 Select Vet-to-Vet board under 'Filter by boards/folder (optional)' header <br/>
+
+3.2 Verify  Radio button for Vet-to-Vet board is selected <br/>
+
+4.1 Select 'MBTest' folder under 'Vet-to-Vet' board.<br/>
+
+4.2 verify *MBTest folder is selected <br/>
+
+5.1: Select 'Post New' button <br/>
+
+5.2 You are posting in..' pop up is displayed with Vet-to-Vet board and MBTest information<br/>
+
+6.1 Select 'Continue'<br/>
+
+6.2 Post New Discussion window is displayed, Signalment window is displayed on the top if signalment is turned on for a folder <br/>
+
+7.1 Select 'Not a clinical case- skip' button if displayed <br/>
+
+7.2 Post new window is visible <br/>
+
+8.1 Provide 'Draft test for Selenium!!!' in discussion title text box<br/>
+
+8.2  Verify Discussion title is populated <br/>
+
+9.1 Provide the following text in 'My Post' area: 'Testing draft functionality'<br/>
+
+9.2 Click on Save Draft button<br/>
+
+9.3 Verify Red 'saving draft' message is displayed  <br/>
+
+10.1 Click on 'Open Draft' button <br/>
+
+10.2: Dismiss Notifications if displayed<br/>
+
+10.3 Verify MyDrafts window is displayed and ‘draft test for selenium' is highlighted under 'New Discussions'. <br/>
+
+10.4 Click on Select Draft button <br/>
+
+10.5:  If browser = firefox, then select OK to a pop up message displayed https://www.screencast.com/t/dkC29Wut16l<br/>
+
+11.1 Select Yes in MyDrafts pop up with message �Are you sure you want to append this draft to your current message?�<br/>
+
+11.2 Verify  Text from the draft is appeneded to the post <br/>
+
+12.1 Click on ‘Post Message’ button<br/>
+
+12.2  Verify  View your New Discussion?' pop up is displayed <br/>
+
+13.1 Would you like to view your new discussion? With the following buttons: Copy Discussion URL, Yes (New Tab/Window), Yes (same Tab/Window) and No<br/>
+
+14.1 Select 'Yes (Same Tab/Window)'<br/>
+
+14.2 Verify  Message Posted confirmation is displayed if member has set up this pref.<br/>
+
+15.1 Your message has been posted! With the following buttons: Copy Discussion URL, OK<br/>
+
+16.1 Select 'Ok '<br/>
+
+16.2: Dismiss Notifications if displayed<br/>
+
+16.2 Verify Discussion viewer is displayed, newly created discussion is highlighted in the left navigation <br/>
+
+17.1 logout application<br/>
+
+17.2 Logging off from VIN is successful <br/>
+</div>
+</td>
+<td></td>
+<td>208</td>
+<td>com.vin.testscripts.BoardsDraftHappyPath@d83da2e</td></tr>
+<tr>
+<td title='com.vin.testscripts.BoardsLanding.boardsLandingPage()'><b>boardsLandingPage</b><br>Test class: com.vin.testscripts.BoardsLanding<br/>
+<a href="#Output-67517174" onClick='toggleBox("Output-67517174", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-67517174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-67517174">
+
+1.1: Open bowser and run the url<br/>
+
+1.2: Vin page loaded successfully<br/>
+
+2.1: Select the LOGIN button<br/>
+
+2.2: Verify login page is displayed<br/>
+
+2.3: Log in to the Portal <br/>
+
+2.4: Verify Security Question Page displayed<br/>
+
+2.5: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+3.1: From the Front page click on Message Board link on the top on the navigation bar<br/>
+
+3.2: Message Board page loaded successfully<br/>
+
+4.1: Check Vet to Vet radio button under Filter by boards section<br/>
+
+4.2: Vet to Vet board selected<br/>
+
+5.1: Observe find since set to 2 days.<br/>
+
+5.2: Find since set to 2 days<br/>
+
+6.1: Click on Find Since button<br/>
+
+6.2: You pre selected pop up message appearse asking to confirm board selection<br/>
+
+7.1: Click on Continue button<br/>
+
+7.2: message dismissed and search result page loaded in same tab.<br/>
+
+7.3: Vet to Vet board displayed with folders listed in drop down.<br/>
+
+7.4: Find Since set to 2 days on search result page.<br/>
+
+8.1: Click  on Boards button<br/>
+
+8.2: Selenium user navigate to boards landing page<br/>
+
+9.1: Select document ID radio button<br/>
+
+9.2: Document ID selected<br/>
+
+10.1: Type 9455926 in search box<br/>
+
+10.2: Search box has value 9455926<br/>
+
+11.1: Click on Find Since button<br/>
+
+11.2: You pre selected pop up message appearse asking to confirm board selection<br/>
+
+12.1: Click on Continue button<br/>
+
+12.2: message dismissed and search result page loaded<br/>
+
+13.1: Scroll page down to discussion tool verify document id matches <br/>
+
+13.2: Document ID matched with document id typed in search box in previous page<br/>
+
+14.1: Click  on Boards button<br/>
+
+14.2: Selenium user navigate to boards landing page<br/>
+
+15.1: Scroll page down and click on My most viewed discussion under My recents section<br/>
+
+15.2: Discussions listed under my most viewed<br/>
+
+16.1: Click on first link from the list shown under my discussion<br/>
+
+16.2: Link opens in new tab with selected discussion title that matched to clicked link title<br/>
+
+17.1: Close new tab with my discussion<br/>
+
+18.1: Click on Personalize your boards link<br/>
+
+18.2: Link Opend in new window<br/>
+
+19.1: Close personalize your boards page opened in new window<br/>
+
+20.1: Click on All boards radio button<br/>
+
+20.2: All Boards Radio button selected<br/>
+
+21.1: Click on logout<br/>
+
+21.2: Selenium logged out<br/>
+</div>
+</td>
+<td></td>
+<td>127</td>
+<td>com.vin.testscripts.BoardsLanding@7ff95560</td></tr>
+<tr>
+<td title='com.vin.testscripts.ChocolateToxicityHappyPath.chocolateToxicityHappyPath()'><b>chocolateToxicityHappyPath</b><br>Test class: com.vin.testscripts.ChocolateToxicityHappyPath<br/>
+<a href="#Output-2070627946" onClick='toggleBox("Output-2070627946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2070627946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2070627946">
+
+1.1: Navigate to Chocolate Toxicity<br/>
+
+1.2: Navigate to LongLink @ beta.vin.com...<br/>
+
+1.3: Log in to the Portal <br/>
+
+2.1: Verify Security Question Page displayed<br/>
+
+2.2: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+2.3: User should be directed to Chocolate Toxicity Calculator<br/>
+
+2.4: Dismiss Notification if displayed<br/>
+
+3.1: Enter 28lb weight for dog<br/>
+
+3.2: User is able to enter a numeric amount for weight<br/>
+
+4.1: Select White Chocolate<br/>
+
+4.2: User is able to select white chocolate from drop down<br/>
+
+5.1: Enter '3333'<br/>
+
+5.2: User is able to enter the text amount<br/>
+
+6.1: Select 'oz' from amount unit drop down<br/>
+
+6.2: User is able to select oz<br/>
+
+7.1: Select radio button<br/>
+
+7.2: Verify User is able to make a selection<br/>
+
+8.1: User is able to select  Calcualte button<br/>
+
+8.2: Verify Dog animation should result in potential death on scale canvas<br/>
+
+9.1: Select Reset<br/>
+
+9.2: Pop up modal asking to confirm reset, select Yes, I want to clear them all<br/>
+
+9.3: Verify Values are reset<br/>
+
+10.1: Logout <br/>
+
+10.2: Verify Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>67</td>
+<td>com.vin.testscripts.ChocolateToxicityHappyPath@8909f18</td></tr>
+<tr>
+<td title='com.vin.testscripts.DrugDilution_FromHomePageHappyPath.drugDilution_FromHomePage()'><b>drugDilution_FromHomePage</b><br>Test class: com.vin.testscripts.DrugDilution_FromHomePageHappyPath<br/>
+<a href="#Output-807361199" onClick='toggleBox("Output-807361199", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-807361199" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-807361199">
+
+1: verify VIN Promo page is loaded <br/>
+
+2: Select the LOGIN button<br/>
+
+3: Verify login page is displayed<br/>
+
+4: Log in to the Portal <br/>
+
+5: Verify Security Question Page displayed<br/>
+
+5.1: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+6 : Verify Front Page displayed<br/>
+
+6.1 : Dismiss Notifications<br/>
+
+7 : Select the drop down arrow next to library<br/>
+
+7.1 : The drop down menu will populate<br/>
+
+8 :Select Calculators from Library Quick Links<br/>
+
+8.1 User is taken to the Calculator page<br/>
+
+9 Select Drug Dilution from list of calculators<br/>
+
+9.1 User is taken to drug dilution calculator<br/>
+
+10.1 Enter drug name<br/>
+
+10.2 Verify user is able to enter a starting drug name in the calculator<br/>
+
+11.1 Enter a drug concentration amount <br/>
+
+11.2 User is able to enter the drug concentration amount<br/>
+
+12.1 Select a unit measurement from drop down<br/>
+
+12.2 User is able to select from drop down<br/>
+
+13.1 Select a volume unit measurement from drop down <br/>
+
+13.2 User is able to select from drop down<br/>
+
+14.1 Enter volume amount <br/>
+
+14.2 Volume Anount entered is present in Text Box<br/>
+
+15.1 Select a unit of measurement from drop down <br/>
+
+5.2 User is able to select from drop down<br/>
+
+16.1 Enter dilutant name<br/>
+
+16.2  User is able to enter a dilutant name<br/>
+
+17.1 Enter dilutant volume amount<br/>
+
+17.2 User is able to enter a volume amount<br/>
+
+18.1 Select dilutent volume measurement from drop down<br/>
+
+18.2 Verify User is able to select a unit volume measurement<br/>
+
+19.1 Select Add to Volume<br/>
+
+19.2 User is able to add to volume<br/>
+
+20.1 Select Calculate<br/>
+
+20.2 User is able to select the calculate button an results will display under final drug section<br/>
+
+21.1 Select Reset<br/>
+
+21.2 User is able to reset the calculations<br/>
+
+23.1: Logout application<br/>
+
+23.2: Verify Logout Page displayed<br/>
+</div>
+</td>
+<td></td>
+<td>135</td>
+<td>com.vin.testscripts.DrugDilution_FromHomePageHappyPath@2aa3cd93</td></tr>
+<tr>
+<td title='com.vin.testscripts.eVetSitesHappyPath.eVetSitesHappyPathextends()'><b>eVetSitesHappyPathextends</b><br>Test class: com.vin.testscripts.eVetSitesHappyPath<br/>
+<a href="#Output-1737446986" onClick='toggleBox("Output-1737446986", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1737446986" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1737446986">
+
+1.1: Navigate to eVetSites https://www.evetsites.com/<br/>
+
+2.1: Click 'Sign Up Now' from the top of the page<br/>
+
+2.2: Verify 'Sign Up Now' page loads successfully<br/>
+
+2.3: Select X to close the 'Sign Up Now' page<br/>
+
+3.1: Select the 'About' drop down<br/>
+
+3.2: From the drop down select 'About EVetSites'<br/>
+
+3.3: Verify the 'About EVetSites' page loads successfully<br/>
+
+4.1: On the search bar enter 'Web Hosting'<br/>
+
+4.2: Click on an article link<br/>
+
+4.3: Verify the selected article loads successfully<br/>
+
+5.1: Select the Facebook icon<br/>
+
+5.2: Verify the Facebook page loads successfully<br/>
+
+5.3: Select X to close the Facebook page<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.vin.testscripts.eVetSitesHappyPath@1df82230</td></tr>
+<tr>
+<td title='com.vin.testscripts.EmergencyDrugCanine.emergencyDrugCanine()'><b>emergencyDrugCanine</b><br>Test class: com.vin.testscripts.EmergencyDrugCanine<br/>
+<a href="#Output-1402636382" onClick='toggleBox("Output-1402636382", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1402636382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1402636382">
+
+1.0: Bringing VIN Page<br/>
+
+1.1:Navigate to Emergency Drugs Calculator<br/>
+
+1.2 Navigate to https://beta.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=7135485<br/>
+
+1.2: Log in to the Portal <br/>
+
+1.3: Verify Security Question Page displayed<br/>
+
+1.4: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+2.1: Dismiss Notifications if displayed<br/>
+
+2.2: Navigate to Emergency Drugs Calculator<br/>
+
+2.3: Verify  Species is set to dog by default<br/>
+
+3.1: Enter 18.7lbs weight for dog<br/>
+
+3.2 User is able to enter numeric text. Kgs are calculated automatically<br/>
+
+3.3: Verify check box is unselected by default<br/>
+
+4.1: Select  Epinephrine Drug Check Box<br/>
+
+4.2:  Verify User is able to select check box<br/>
+
+4.3: Enter Epinephrine Dose drop down<br/>
+
+5.1: Enter  Atropine Drug Check Box<br/>
+
+5.2: Verify User is able to select check box<br/>
+
+5.3: Enter Atropine Conc drop down :: Enter 0.5<br/>
+
+5.4: Verify User is able to enter Numeric text <br/>
+
+5.5:  Select Atropine Dose drop down ::  Enter .8<br/>
+
+6.1: Verify  check box is unselected by default<br/>
+
+6.2: Select Magnesium Chloride Check Box<br/>
+
+6.3: Verify User is able to select check box<br/>
+
+7.1: Magnesium Chloride Conc drop down  :: Enter 2<br/>
+
+7.2: Magnesium Chloride Dose drop down ::  Enter .8<br/>
+
+8.1: Select   Naloxone Check Box Drug Check Box<br/>
+
+8.2: Verify User is able to select check box<br/>
+
+8.3: Enter Naloxone Conc drop down :: Enter 0.7<br/>
+
+8.4: Select Naloxone Dose drop down ::  Enter .08<br/>
+
+9.1:  Select   Lidocaine  Check Box<br/>
+
+9.2: Verify User is able to select check box<br/>
+
+9.3: Lidocaine Conc drop down :: enter 27<br/>
+
+9.4: Select Lidocaine Dose drop down ::  Enter 5<br/>
+
+10.1: Select Diazepam Check Box<br/>
+
+10.2: Verify User is able to select check box<br/>
+
+10.3: Diazepam Conc drop down :: Enter 7<br/>
+
+10.4: Diazepam Dose drop down :: Enter  .6<br/>
+
+11.1:  Select   Calcium Chloride  Check Box<br/>
+
+11.2: Verify User is able to select check box<br/>
+
+11.3: Enter  Calcium Chloride Conc Textbox:: Enter 107<br/>
+
+11.4:  Select Calcium Chloride Dose drop down ::  Enter 12 <br/>
+
+12.1: Select Glucose Check Box<br/>
+
+12.2: Verify User is able to select check box<br/>
+
+12.3: Glucose Conc drop down :: Enter 507<br/>
+
+12.4: Glucose Dose drop down :: Enter  507 <br/>
+
+13.1: Select Vasopressin Check Box<br/>
+
+13.2: Verify User is able to select check box<br/>
+
+13.3: Vasopressin Conc drop down :: Enter 27<br/>
+
+13.4: Vasopressin Dose drop down :: Enter  1 <br/>
+
+14.1: Select Option Check Box<br/>
+
+14.2: no information entered by user<br/>
+
+15.1: Select Option Check Box<br/>
+
+15.2: no information entered by user<br/>
+
+16.1: Colloid resuscitation check Box <br/>
+
+16.2: Verify User is able to select check box<br/>
+
+17.1: Leave at default 20<br/>
+
+18.1: Select Defibrillation Check Box<br/>
+
+18.2:  Verify User is able to select check box<br/>
+
+18.3: Defibrillation (external) Dose ::  Leave at default 4  <br/>
+
+19.1: Total shock volume of fluids check box<br/>
+
+19.2:  Verify User is able to select check box<br/>
+
+20.1: Total shock volume of fluids dose :: Set at 90<br/>
+
+20.2: Verify Numeric Text  for each Text Box <br/>
+
+21.1: Select Calculate<br/>
+
+21.2: Verify User is able to calculate<br/>
+
+21.3: Expected Results:Epinephrine Volume - 1.53/Atropine Volume - 13.6/Magnesium Chloride - 3.4/ Naloxone Volume - .97/Lidocane Volume - 1.57/ Diazapam Volume - .73/Calcium Chloride - .95/Glucose - 8.5/ Vasopressin - .31/ Colloid resuscitation - 170/ Defibrillation 34J/Total Shock Volume of Fluids - 765<br/>
+
+22.1: Select Reset<br/>
+
+23.1: Pop Up Modal will display asking the user if they are sure they <br/>
+
+24.1: Select ok<br/>
+
+25.1: Logout <br/>
+
+26.1:  Verify Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>73</td>
+<td>com.vin.testscripts.EmergencyDrugCanine@7ea37dbf</td></tr>
+<tr>
+<td title='com.vin.testscripts.EmergencyDrugFeline.emergencyDrugFeline()'><b>emergencyDrugFeline</b><br>Test class: com.vin.testscripts.EmergencyDrugFeline<br/>
+<a href="#Output-1661015898" onClick='toggleBox("Output-1661015898", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1661015898" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1661015898">
+
+1.0: Bringing VIN Page<br/>
+
+1.1: Navigate to https://beta.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=7135485<br/>
+
+1.2: Log in to the Portal <br/>
+
+1.3: Verify Security Question Page displayed<br/>
+
+1.4: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+2.1: Navigate to Emergency Drugs Calculator<br/>
+
+2.2: Dismiss Notifications if displayed<br/>
+
+2.3: Verify  Species is set to dog by default<br/>
+
+2.4: Select cat for species<br/>
+
+2.5: User is able to select the cat  radio button<br/>
+
+3.1: Enter 20.5 lbs weight for cat<br/>
+
+3.2: Verify  User is able to enter numeric text. Kgs are calculated automatically<br/>
+
+4.1: Verify check box is unselected by default<br/>
+
+4.2: Select  Epinephrine Drug Check Box<br/>
+
+4.3:  Verify User is able to select check box<br/>
+
+5.1: Select Epinephrine Conc drop down  :: Select 1<br/>
+
+5.2: Select Epinephrine Dose drop down :: Enter .01<br/>
+
+5.3: Verify  User is able to enter numeric text<br/>
+
+6.1: Select  Atropine Drug Check Box<br/>
+
+6.2: Verify User is able to select check box<br/>
+
+7.1: Enter Atropine Conc drop down :: Enter 0.5<br/>
+
+7.2: Verify User is able to enter Numeric text <br/>
+
+8.1:  Select Atropine Dose drop down ::  Enter .05<br/>
+
+9.1: Verify  check box is unselected by default<br/>
+
+9.2: Select Magnesium Chloride Check Box<br/>
+
+9.3: Verify User is able to select check box<br/>
+
+9.4: Magnesium Chloride Conc drop down  :: Enter 2 <br/>
+
+9.5: Magnesium Chloride Dose drop down ::  Enter .15<br/>
+
+10.1:  Select   Naloxone  Check Box<br/>
+
+10.2: Verify User is able to select check box<br/>
+
+11.1: Select  Naloxone Conc drop down :: Enter 0.7<br/>
+
+12.1:  Select Naloxone Dose drop down ::  Enter .04<br/>
+
+12.2: Verify  check box is unselected by default<br/>
+
+13.1:  Select   Lidocaine  Check Box<br/>
+
+13.1.1: Verify User is able to select check box<br/>
+
+13.2: Lidocaine Conc drop down :: enter 20<br/>
+
+13.3: Select Lidocaine Dose drop down ::  Enter .2<br/>
+
+14.1: Select Diazepam Check Box<br/>
+
+14.2: Verify User is able to select check box<br/>
+
+15.1: Diazepam Conc drop down :: Enter 7<br/>
+
+15.2: Diazepam Dose drop down :: Enter  .75<br/>
+
+16.1:  Select   Calcium Chloride  Check Box<br/>
+
+16.2: Verify User is able to select check box<br/>
+
+17.1: Enter  Calcium Chloride Conc Textbox:: Enter 177<br/>
+
+17.2:  Select Calcium Chloride Dose drop down ::  Enter 10 <br/>
+
+18.1: Select Glucose Check Box<br/>
+
+18.2: Verify User is able to select check box<br/>
+
+19.1: Glucose Conc drop down :: Enter 522<br/>
+
+19.2: Glucose Dose drop down :: Enter  507 <br/>
+
+20.1: Select Vasopressin Check Box<br/>
+
+20.2: Verify User is able to select check box<br/>
+
+20.3: Vasopressin Conc drop down :: Enter 27<br/>
+
+20.4: Vasopressin Dose drop down :: Enter  .8 <br/>
+
+21.1: Select Option Check Box<br/>
+
+21.2: no information entered by user<br/>
+
+22.1: Colloid resuscitation check Box <br/>
+
+22.2: Verify User is able to select check box<br/>
+
+23.1: Colloid resuscitation Dose Drop down :: Set at 14<br/>
+
+24.1: Select Defibrillation Check Box<br/>
+
+24.2:  Verify User is able to select check box<br/>
+
+24.3: Defibrillation (external) Dose :: Set at 8  <br/>
+
+25.1: Total shock volume of fluids check box<br/>
+
+25.2: Verify User is able to select check box<br/>
+
+26: Total shock volume of fluids dose :: Set at 56<br/>
+
+27:  Verify Numeric Text  for each Text Box <br/>
+
+28: Select Calculate<br/>
+
+28.1: Verify User is able to calculate<br/>
+
+28.2: Expected Results:Epinephrine Volume - .09/Atropine Volume - .93/Magnesium Chloride - .7/ Naloxone Volume - .53/Lidocane Volume - .09/ Diazapam Volume - 1/Calcium Chloride - .53/Glucose - 9.03/ Vasopressin - .28/ Colloid resuscitation - 130.2/ Defibrillation 74.4J/Total Shock Volume of Fluids - 520.8<br/>
+
+29: Select Reset<br/>
+
+30: Pop Up Modal will display asking the user if they are sure they <br/>
+
+31: Select ok<br/>
+
+32: Logout <br/>
+
+33: Verify Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>73</td>
+<td>com.vin.testscripts.EmergencyDrugFeline@4b44655e</td></tr>
+<tr>
+<td title='com.vin.testscripts.FeedTubeHappyPath.feedTubeHappyPath()'><b>feedTubeHappyPath</b><br>Test class: com.vin.testscripts.FeedTubeHappyPath<br/>
+<a href="#Output-319509860" onClick='toggleBox("Output-319509860", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-319509860" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-319509860">
+
+1.0: Bringing VIN Page<br/>
+
+1.1: Navigate to Feeding Tube calculator https://beta.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=8212093<br/>
+
+1.2: Verify login page is displayed<br/>
+
+1.3: Log in to the Portal <br/>
+
+1.4: Verify Security Question Page displayed<br/>
+
+1.5: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.6: Dismiss Notifications<br/>
+
+1.7: User should be directed to Feeding Tube Calculator and a pop up modal will display. Select ok. <br/>
+
+2.1: Enter weight<br/>
+
+2.2: User is able to enter a numeric amount for weight<br/>
+
+3: Verify 1 is selected by default<br/>
+
+3.1: Select 1 from drop down<br/>
+
+3.2:  Verify User is able to select from drop down<br/>
+
+4.1: Select 4 from drop down<br/>
+
+4.2: Verify User is able to select from drop down<br/>
+
+5.1: Select Hills Prescription Diet a/d canine/feline canned<br/>
+
+5.2: Verify User is able to select from drop down<br/>
+
+6.1: Select the 'No' radio button<br/>
+
+6.2:  Verify User is able to select from  radio button<br/>
+
+7.1: Select calculate button<br/>
+
+7.2: User is able to select button<br/>
+
+7.3:  Verify Results are calculated<br/>
+
+8.1: Select Reset button<br/>
+
+8.2: Pop up modal will display asking the user if they want to clear all inputs. Select ok<br/>
+
+8.3: Verify Reset Button is selected<br/>
+
+9.1: Logout Application<br/>
+
+9.2: Verify Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>com.vin.testscripts.FeedTubeHappyPath@290d210d</td></tr>
+<tr>
+<td title='com.vin.testscripts.FrontPageScriptsHappyPath.frontPage()'><b>frontPage</b><br>Test class: com.vin.testscripts.FrontPageScriptsHappyPath<br/>
+<a href="#Output-1292513159" onClick='toggleBox("Output-1292513159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1292513159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1292513159">
+
+1.1: Verify VIN Promo page is loaded (Title: Veterinary Information Network®, Inc. – VIN)<br/>
+
+1.2: Select the LOGIN button<br/>
+
+1.3: Verify login page is displayed (Title: Login)<br/>
+
+1.4: Log in to the Portal <br/>
+
+1.5: Verify Security Question Page displayed (Title: VIN – Security Question)<br/>
+
+1.6: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.7: Verify Front Page displayed (Title: Front Page – VIN)<br/>
+
+1.8: Dismiss Alert Notifications if displayed<br/>
+
+2.1: Click on left and right arrow on image carousel<br/>
+
+2.2: Verify CE Course banner changes every time user clicks on right or left arrow<br/>
+
+3.1: Click on CE Banner <br/>
+
+3.2: Dismiss Alert Notifications if displayed<br/>
+
+3.3: Verify Advertised CE course page opened in new tab. (Course name matches the name on ce banner)<br/>
+
+4.1 Close tab and Go back to front page<br/>
+
+4.2 Verify user is back on front page <br/>
+
+5.1 Click on first link in daily pearl <br/>
+
+5.2: Dismiss Alert Notifications if displayed<br/>
+
+5.2 Link opens up in new tab. (Verify link source matches the link title on front page)<br/>
+
+6.1 Close tab and Go back to front page <br/>
+
+6.2 Verify user is back on front page <br/>
+
+6.3: Scroll down at Quick Poll with answer options<br/>
+
+6.4: Verify that the quickpoll is loaded<br/>
+
+7.1: Scroll down and Click on VIN Consultant link on front page<br/>
+
+7.2: Dismiss Alert Notifications if displayed<br/>
+
+7.3: VIN Consultants and Editors page opens up in new tab (Consultant name matches consultant name link on front page)<br/>
+
+8.1: Close tab and Go back to front page<br/>
+
+8.2: User is back on front page<br/>
+
+9.1: Enter 'Dog' in search box and select the magnifying icon<br/>
+
+9.2: Search result for Dog is displayed in a new tab<br/>
+
+9.3: Dismiss Alert Notifications if displayed<br/>
+
+10.1: logout application<br/>
+
+10.2: Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>138</td>
+<td>com.vin.testscripts.FrontPageScriptsHappyPath@1d76aeea</td></tr>
+<tr>
+<td title='com.vin.testscripts.MyColleaguesHappyPath.mYColleagueSearchViewResults()'><b>mYColleagueSearchViewResults</b><br>Test class: com.vin.testscripts.MyColleaguesHappyPath<br/>
+<a href="#Output-714819629" onClick='toggleBox("Output-714819629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-714819629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-714819629">
+
+1 Navigate to Colleague Search<br/>
+
+1.1: Log in to the Portal <br/>
+
+1.2: Verify Security Question Page displayed<br/>
+
+1.3: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.4 Dismiss Notifications<br/>
+
+1.5 Verify User should see colleague search entry<br/>
+
+2.1 Radio button All VINners<br/>
+
+2.2 Verify All VINners radio button is selected<br/>
+
+3.1 Submit search no variables<br/>
+
+3.2 Verify Error message modal 'Please enter a value in one of the search fields'<br/>
+
+4.1 Enter 'Ava'<br/>
+
+4.3 Verify user is able to enter the text<br/>
+
+5.1 Enter 'Winters'<br/>
+
+5.2 Verify user is able to enter the text<br/>
+
+6.1 Submit Full Name Search<br/>
+
+6.2 verify  user should see search results 'Dr. Ava Winters'<br/>
+
+6.3 Verify modal 'Search Results'  | text 'Viewing 1 of 1 results'<br/>
+
+7.1 Submit view no selection<br/>
+
+7.2 Error message :: Verify modal 'Please select a colleague'<br/>
+
+8.1 Select 'Ava Winters''<br/>
+
+8.2  Verify user should see 'Dr. Ava Winters' highlighted<br/>
+
+9.1 View Profile 'Ava Winters' <br/>
+
+9.2 verify browser url <br/>
+
+9.3 verify VINners Profile - Ava Winters<br/>
+
+10.1 logout application<br/>
+
+10.2 Verify logout <br/>
+</div>
+</td>
+<td></td>
+<td>62</td>
+<td>com.vin.testscripts.MyColleaguesHappyPath@78dd667e</td></tr>
+<tr>
+<td title='com.vin.testscripts.MyCEHappyPath.myCEHappyPath()'><b>myCEHappyPath</b><br>Test class: com.vin.testscripts.MyCEHappyPath<br/>
+<a href="#Output-443110940" onClick='toggleBox("Output-443110940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-443110940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-443110940">
+
+verify VIN Promo page is loaded <br/>
+
+1: Navigate to https://beta.vin.com/CE/<br/>
+
+2. Continual education portal page is loaded<br/>
+
+3. Locate login link and click to login<br/>
+
+4. Enter Selenium user credentials<br/>
+
+5. If Security Question Page displayed enter Security Answer and Login<br/>
+
+5.1:  Enter Security Answer and Login if Security Question Page displayed<br/>
+
+6. Selenium successfully logged in<br/>
+
+7. If Dismiss Notification if displayed dismiss alert by clicking on dismiss button<br/>
+
+8. Alert pop-up dismissed<br/>
+
+9. Go to additional records tab<br/>
+
+10. Click on add button<br/>
+
+11. Add course pop-up opened up<br/>
+
+12. type VIN in Organization text box<br/>
+
+13. type Osha in Program text box<br/>
+
+14. Click on Calendar icon<br/>
+
+15. Calendar popped up<br/>
+
+16. type https://beta.vin.com in URL text box<br/>
+
+17. Click on add button<br/>
+
+18. Click Ok to confirm pop-up message<br/>
+
+19. Record added to additional records and displayed under tab<br/>
+
+20. Click on visit course link - green arrow<br/>
+
+21. VIN promo page opened up in new window<br/>
+
+22. Close VIN Promo page<br/>
+
+23. Selenium is back to MyCE<br/>
+
+24. Delete added record by clicking on x icon under actions<br/>
+
+25. Added record deleted<br/>
+
+26. Logout Selenium user by clicking on logout link<br/>
+
+27. Selenium user logged out<br/>
+</div>
+</td>
+<td></td>
+<td>76</td>
+<td>com.vin.testscripts.MyCEHappyPath@3bd40a57</td></tr>
+<tr>
+<td title='com.vin.testscripts.MyColleaguesHappyPath.myColleaguesSearch()'><b>myColleaguesSearch</b><br>Test class: com.vin.testscripts.MyColleaguesHappyPath<br/>
+<a href="#Output-118290556" onClick='toggleBox("Output-118290556", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-118290556" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-118290556">
+
+1.0: verify VIN Promo page is loaded <br/>
+
+1.1:  go to https://beta.vin.com/Members/Tools/MyVIN/Default.aspx?View=Search<br/>
+
+1.2: verify VIN login page is loaded<br/>
+
+1.3: Call Login method<br/>
+
+1.4: if alert notification displayed Dismiss Notification<br/>
+
+2.1: Verify User should see colleague search entry<br/>
+
+2.2: Verify Radio button All VINners is checked<br/>
+
+2.3: Submit search no variables by clicking submit button<br/>
+
+2.4: Verify Error message modal 'Please enter a value in one of the search fields'<br/>
+
+2.5: Enter 'Ava' in First Name field<br/>
+
+2.6: Verify user is able to enter the text<br/>
+
+2.7: Enter 'Winters' in Last Name field<br/>
+
+2.8: Verify user is able to enter the text<br/>
+
+2.9: Submit Full Name Search by clicking submit button<br/>
+
+3.0: verify user should see search results 'Dr. Ava Winters'<br/>
+
+3.1: Verify message 'Search Results' popup <br/>
+
+4.0: Call logout method<br/>
+
+7.1 Verify logout <br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>com.vin.testscripts.MyColleaguesHappyPath@78dd667e</td></tr>
+<tr>
+<td title='com.vin.testscripts.PostGraduateTrainingHappyPath.postGraduateTrainingHappyPath()'><b>postGraduateTrainingHappyPath</b><br>Test class: com.vin.testscripts.PostGraduateTrainingHappyPath<br/>
+<a href="#Output-800786831" onClick='toggleBox("Output-800786831", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-800786831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-800786831">
+
+1.1: Launch VIN Application by going to https://www.vin.com/vin/ url<br/>
+
+1.2: verify VIN promo page is loaded<br/>
+
+1.3: Call login method<br/>
+
+1.3.1: Verify Security Question Page displayed<br/>
+
+1.3.2 Verify User will naviagate to Post Graduate Training Page when selecting URL<br/>
+
+1:4: Verify User logged in<br/>
+
+1:5: Dismiss alert Notifications if one pops up by clicking on dismiss button<br/>
+
+1.1: Click on MYVIN<br/>
+
+1:2: Confirm MyVIN opens up in new pop up window<br/>
+
+1:3: Click on Profile in new pop up window and click on Post Graduate training from drop down list<br/>
+
+1.1: Verify post graduate training page is loaded<br/>
+
+1.2: Select 'Add Internship' button<br/>
+
+1.3: Verify add internship pop up is loaded with "Enter your details and click Add" pop up message<br/>
+
+1:4: Select 'Brazil' from the Country drop down<br/>
+
+1:5: Confirm country field has Brazil value<br/>
+
+1:6: Select 'Animal Control' from the Subject drop down<br/>
+
+1:7: Confirm Subject field has Animal Control value<br/>
+
+1.8: Provide 'Test School' in the School/Organization/Institution text field<br/>
+
+1:8: Select 'Jan' from the Completion Date drop down<br/>
+
+1:9: Confirm School/Organization/Institution field accepts type in value<br/>
+
+1.10: Select month'Jan' for month drop down and year '2002' for year drop down in Completion drop down<br/>
+
+1.1: Click on 'Add' button<br/>
+
+1.2: Dismiss alert Notifications if one pops up by clicking on dismiss button<br/>
+
+1.3: Verify Created Record.<br/>
+
+1.4: Select 'Add Residency' button.<br/>
+
+1.5: Select 'Argentina' from the Country drop down<br/>
+
+1.6: Select 'Avian Medicine' from the Subject drop down<br/>
+
+1.7: Provide 'Test Organization' in the School/Organization/Institution text field<br/>
+
+1:8: Select 'June' from the Completion Date month drop down<br/>
+
+1:9: Select '2007' from the Completion date year drop down<br/>
+
+1.1: Select 'Add' button.<br/>
+
+1.2: Dismiss alert Notifications if one pops up by clicking on dismiss button<br/>
+
+1:3: Verify Record Added<br/>
+
+1:4: Click on 'Delete' button on added internship record<br/>
+
+1:5: Dismiss alert Notifications if one pops up by clicking on dismiss button<br/>
+
+1:6: Confirm record deleted<br/>
+
+1:7: select 'Delete' button on added residency record<br/>
+
+1:8: Dismiss alert Notifications if one pops up by clicking on dismiss button<br/>
+
+1.1: Verify Added Residency is deleted.<br/>
+
+1:2: Dismiss alert Notifications if one pops up by clicking on dismiss button<br/>
+
+1.3: Call Logout method<br/>
+
+1:4: Verify Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>111</td>
+<td>com.vin.testscripts.PostGraduateTrainingHappyPath@79ca92b9</td></tr>
+<tr>
+<td title='com.vin.testscripts.VINPromoPageStudentAcademia.promoPageStudentAcademia()'><b>promoPageStudentAcademia</b><br>Test class: com.vin.testscripts.VINPromoPageStudentAcademia<br/>
+<a href="#Output-538613615" onClick='toggleBox("Output-538613615", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-538613615" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-538613615">
+
+1.1: Go to https://beta.vin.com<br/>
+
+2.1: Select the 'Students and Academia' drop down option<br/>
+
+2.2: Select 'Faculty and Residents<br/>
+
+2.3: Verify 'Faculty and Residents' page loads successfully<br/>
+
+2.4: Select the 'Students and Academia' drop down option<br/>
+
+2.5: Select 'Interns'<br/>
+
+2.6: Verify pages scrolls to Intern section of page<br/>
+
+3.1: Select the 'Students and Academia' drop down option<br/>
+
+3.2: Select 'Recent Graduates'<br/>
+
+3.3: Verify 'Recent Graduates' page loads successfully<br/>
+
+3.4: Close the 'Recent Graduates' tab<br/>
+
+4.1: Select the 'Students and Academia' drop down option<br/>
+
+4.2: Select 'VIN Students'<br/>
+
+4.3: Verify 'VIN Students' page loads successfully<br/>
+
+4.4: Close the 'VIN Students' tab<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.vin.testscripts.VINPromoPageStudentAcademia@527e5409</td></tr>
+<tr>
+<td title='com.vin.testscripts.SignalmentHappyPath.signalment()'><b>signalment</b><br>Test class: com.vin.testscripts.SignalmentHappyPath<br/>
+<a href="#Output-1090642246" onClick='toggleBox("Output-1090642246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1090642246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1090642246">
+
+1.1:verify VIN Promo page is loaded<br/>
+
+1.2: Select the LOGIN button<br/>
+
+1.3: Verify login page is displayed<br/>
+
+1.4: Log in to the Portal <br/>
+
+1.5: Verify Security Question Page displayed<br/>
+
+1.6: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.7: Verify Front Page displayed<br/>
+
+1.8 Dismiss Notifications<br/>
+
+2.1: Select 'Message Boards' from the toolbar<br/>
+
+3.1: Select dropdown icon for Vet-to-Vet board) <br/>
+
+4.1 Select  MBtest folder from the list under ‘Filter by Boards/folder (optional)’ section<br/>
+
+ 4.2 Select ‘Post New’ orange button located on the left upper corner of the page<br/>
+
+4.3 Select ‘Continue’ button from the ‘You Are Posting In’ pop up<br/>
+
+4.4 Enter Name/patient ID: Leo,<br/>
+
+4.5 Location: Davis, California, USA,<br/>
+
+4.6 Limit type of animal to: Dogs,<br/>
+
+4.7 Breed or Type of Animal (be specific): start typing ‘mal’ and then pick ‘Matlese’ from the autosuggest list<br/>
+
+4.8 Sex: male, neutered<br/>
+
+4.9 Weight (lb): 16.2 (tab to ‘OR Weight (kg) field to get data in it<br/>
+
+4.10 Age Years: 3<br/>
+
+4.11 Months: 6<br/>
+
+4.12 Weeks: 2<br/>
+
+4.13 Or DOB: make sure that the  DOB is populated 
+Chief complaint: This is a test for selenium<br/>
+
+5.1 Select Save<br/>
+
+5.2 Enter ‘Selenium test for signalment’ in ‘Discussion title’ field<br/>
+
+5.3 field accepts entry value<br/>
+
+6.1 Enter ‘This is a test for signalment’ in the message are<br/>
+
+7.1 Select ‘Post Message’ button<br/>
+
+8.1  Click on ‘Yes (same New Tab/Window’ option for ‘View Your New Discussion’ pop up<br/>
+
+9.1 Click on 'OK' from the message posted confirmation. (if displayed)<br/>
+
+10.1 Verify that the red text for signalment is displayed in the discussion<br/>
+
+11.1 Now select ‘Post New’<br/>
+
+12.1 Select ‘Not a clinical case – skip’<br/>
+
+13.1 Select ‘Cancel’ from the post window.<br/>
+
+14.1 Select ‘OK’ to a pop up message asking ‘Are you sure you want to cancel your post?’<br/>
+
+15.1 Select a dropdown icon next to ‘Hi Selenium’ and then select logout<br/>
+
+15.2 Member is logged out<br/>
+</div>
+</td>
+<td></td>
+<td>178</td>
+<td>com.vin.testscripts.SignalmentHappyPath@1460a8c0</td></tr>
+<tr>
+<td title='com.vin.testscripts.StudentLoanSimHappyPath.studentLoanSimulatorHappyPath()'><b>studentLoanSimulatorHappyPath</b><br>Test class: com.vin.testscripts.StudentLoanSimHappyPath<br/>
+<a href="#Output-1958375413" onClick='toggleBox("Output-1958375413", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1958375413" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1958375413">
+
+1.0: Bringing VIN  page<br/>
+
+1.1: Navigate to Student loan Sim beta.vin.com/studentdebtcenter/default.aspx?pid=14352&id=7578014<br/>
+
+2.1: Verify user is able to naviagate to Student Loan Simulator when selecting URL<br/>
+
+2.4 Click on  Run Sim button<br/>
+
+2.5 Verify User is selecting to run simulator with default input values. <br/>
+
+3.1  Verify Loan Payment Summary table will populate with default calculations.<br/>
+
+3.2 Verify  Forgiveness Planning Module will populate with default calculations. <br/>
+
+3.3  Verify Total Loan Balance During Repayment table will populate.  <br/>
+
+3.3 Verify  Monthly Repayment Summary will display for the 6 loan types. <br/>
+
+3.2 Verify Loan Repayment Range of Minimum Monthly Payments (by period) table will populate.<br/>
+
+3.2 Verify Monthly Report Summary will display for the 6 loans types. <br/>
+
+4.1 Click on  Reset Button<br/>
+
+4.2  Verify  Values are cleared.<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.vin.testscripts.StudentLoanSimHappyPath@a4102b8</td></tr>
+<tr>
+<td title='com.vin.testscripts.SubscriptionsHappyPath.subscriptionHappyPath()'><b>subscriptionHappyPath</b><br>Test class: com.vin.testscripts.SubscriptionsHappyPath<br/>
+<a href="#Output-818512164" onClick='toggleBox("Output-818512164", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-818512164" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-818512164">
+
+1.1: Verify VIN Promo page is loaded (Title: Veterinary Information Network�, Inc. � VIN)<br/>
+
+1.2: Select the LOGIN button<br/>
+
+1.3:Verify login page is displayed (Title: Login)<br/>
+
+1.4: Log in to the Portal <br/>
+
+1.5: Verify Security Question Page displayed (Title: VIN � Security Question)<br/>
+
+1.6: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.7: Verify Front Page displayed (Title: Front Page � VIN)<br/>
+
+1.8: Dismiss Alert Notifications if displayed<br/>
+
+2.1: Select 'Message Boards' from the toolbar<br/>
+
+2.2: Dismiss Alert Notifications if displayed<br/>
+
+3.1: Select Vet-to-Vet board under 'Filter by boards/folder (optional)' header <br/>
+
+3.2: Verify  Radio button for Vet-to-Vet board is selected <br/>
+
+3.3: Select 'MBTest' folder under 'Vet-to-Vet' board.<br/>
+
+3.4: verify 'MBTest' folder is selected <br/>
+
+4.1: Select the Drop down button next to 'Find Since'.<br/>
+
+4.2: Select '30 Days' from the drop down list.<br/>
+
+4.3: Verify 30 days is populated on the drop down menu option<br/>
+
+4.4: Select 'Find Since'<br/>
+
+5.1: 'You PRE-SELECTED...' pop up window if displayed<br/>
+
+5.3: Dismiss Alert Notifications if displayed<br/>
+
+6.1: Select the first discussion from the list<br/>
+
+6.2: Verify The selected discussion thread is displayed in the right pane<br/>
+
+6.3: Select the 'Subscribe' button on the top left of the page<br/>
+
+6.4: Verify Message board subscription pop up window is displayed<br/>
+
+6.5: Select 'Subscribe to this Discussion'<br/>
+
+6.6: Verify member is subscribed to discussion thread and subscribe button on top left is now yellow and labelled as unsubscribe.<br/>
+
+7.1: Click on the Unsubscribe button<br/>
+
+7.2  Verify Message board subscriptions pop up window is displayed<br/>
+
+7.3: Select 'Unsubscribe to this Discussion'<br/>
+
+7.4: Verify member is unsubscribe from discussion thread<br/>
+
+8.1: Logout Application<br/>
+
+8.2: Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>119</td>
+<td>com.vin.testscripts.SubscriptionsHappyPath@7fc229ab</td></tr>
+<tr>
+<td title='com.vin.testscripts.TransfusionVolumeHappyPath.transfusionVolumeHappyPath()'><b>transfusionVolumeHappyPath</b><br>Test class: com.vin.testscripts.TransfusionVolumeHappyPath<br/>
+<a href="#Output-1863195505" onClick='toggleBox("Output-1863195505", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1863195505" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1863195505">
+
+1.1: Verify promo page<br/>
+
+1.2: Call Login Method<br/>
+
+1.3: Verify Security Question Page displayed<br/>
+
+1.4: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+2.1: Dismiss Alert Notifications if displayed<br/>
+
+3.1: Select 'Library' from the toolbar<br/>
+
+3.2: Select 'Calculators & Conversion Tables'<br/>
+
+3.3: Dismiss Alert Notifications if displayed<br/>
+
+3.4: 3.4: Select 'Transfusion Volume Calculator'<br/>
+
+4.1: Dismiss Alert Notifications if displayed<br/>
+
+4.2: Verify 'Species' radio button is set to dog by default<br/>
+
+4.3: Enter '25' in the kg text field: <br/>
+
+4.4: Verify Lbs calculated automatically<br/>
+
+4.5: Enter '18' in the Actual (current) hematocrit (HCTa) text field<br/>
+
+4.6: Enter '20' in the Desired (target) hematocrit (HCTt) text field<br/>
+
+4.7: 4.7: Enter '66' in the Donor hematocrit (HCTd) text field<br/>
+
+5.1: Select 'Calculate'<br/>
+
+5.2: Verify Results are calculated<br/>
+
+6.1: Select 'Reset'<br/>
+
+6.2: 6.2: 'Do you want to clear all your inputs' pop up window will display<br/>
+
+6.3: Select 'OK'<br/>
+
+7.1: Dismiss Alert Notifications if displayed<br/>
+
+8.1:  Select the 'Cat' radio button<br/>
+
+8.2: Enter '5' in the lb text field<br/>
+
+8.3: Verify kg calculated automatically<br/>
+
+8.4: Enter '19' in the Actual (current) hematocrit (HCTa) text field<br/>
+
+8.5: Enter '20' in the Desired (target) hematocrit (HCTt) text field<br/>
+
+8.6: Enter '62' in the Donor hematocrit (HCTd) text field<br/>
+
+9.1: Select 'Calculate'<br/>
+
+9.2: Verify Results are calculated<br/>
+
+10.1: Select 'Reset'<br/>
+
+10.2: 'Do you want to clear all your inputs' pop up window will display<br/>
+
+10.3: Select 'OK'<br/>
+
+11.1: Dismiss Alert Notifications if displayed<br/>
+
+11.2: Close the 'Transfusion Volume Calculator' tab<br/>
+
+12.1: Call Logout Method<br/>
+
+ VIN Logout page is displayed. <br/>
+</div>
+</td>
+<td></td>
+<td>111</td>
+<td>com.vin.testscripts.TransfusionVolumeHappyPath@6b4a4e18</td></tr>
+<tr>
+<td title='com.vin.testscripts.VVDHHappyPath.vVDh()'><b>vVDh</b><br>Test class: com.vin.testscripts.VVDHHappyPath<br/>
+<a href="#Output-16756080" onClick='toggleBox("Output-16756080", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16756080" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16756080">
+
+1.1: Verify VIN Promo page is loaded (Title: Veterinary Information Network®, Inc. – VIN)<br/>
+
+1.2: Select the LOGIN button<br/>
+
+1.3: Verify login page is displayed (Title: Login)<br/>
+
+1.4: Log in to the Portal<br/>
+
+1.5: Verify Security Question Page displayed (Title: VIN – Security Question)<br/>
+
+1.6: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.7: Verify Front Page displayed (Title: Front Page – VIN)<br/>
+
+1.8: Dismiss Alert Notifications if displayed<br/>
+
+2.1: Select the 'Library' dropdown and then select 'VIN Veterinary Drug Handbook'<br/>
+
+3.1: Provide 'Adenosylmethionine' as a search term in search text box and then select 'GO'<br/>
+
+3.2: Verify Search results are displayed in the right pane<br/>
+
+4.1: Click on checkbox for result # 1 and 2<br/>
+
+4.2: Verify All checkboxes displayed on the page are selected<br/>
+
+5.1: Click on 'View Checked' button<br/>
+
+5.2: Dismiss Alert Notifications if displayed<br/>
+
+5.3: Verify Results are displayed on the new page<br/>
+
+6.1: Select 'Add List to MyStuff' link<br/>
+
+6.2: MyStuff window is displayed with a pop up message 'You are adding 'VIN Veterinary Drug Handbook - VIN' to your MyStuff. After you click OK, you may pick a folder for your link and don't forget to click Add link.'<br/>
+
+7.1: Select 'OK'<br/>
+
+8.1: Select 'Cancel'<br/>
+
+8.2: Verify MyStuff window is displayed<br/>
+
+9.1: Close MyStuff window<br/>
+
+9.2: Verify MyStuff window is closed<br/>
+
+9.3: Close tab displaying View Checked results<br/>
+
+9.4: The tab displaying View Checked results is closed<br/>
+
+10.1 Select from the left navigation under Drug Name<br/>
+
+10.2 Verify  List of all A drugs are displayed in the right pane. <br/>
+
+11.1 Select open in new window icon for Albumina<br/>
+
+11.2: Dismiss Alert Notifications if displayed<br/>
+
+11.3: Verify 'Albumin' drug is displayed in a new tab/window<br/>
+
+12.1: Click on 'Expand All' button<br/>
+
+12.2: Verify All the sections for Albumin are expanded<br/>
+
+13.1: Click on 'Collapse All' button<br/>
+
+13.2: Verify All the sections for Albumin are collapsed<br/>
+
+14.1: Select Preferences dropdown and then select 'Set your default preferences in MyVIN for VDH'<br/>
+
+14.2: Verify 'VIN Veterinary Drug Handbook preferences drop dowm window is displayed<br/>
+
+15.1: Select 'Set VIN Default as the default view'<br/>
+
+15.2 Verify VIN Default radio button is selected <br/>
+
+16.1: Verify Preferences drop down window closes after selecting an option<br/>
+
+16.2: Close 'Albumin' tab<br/>
+
+16.3: Verify 'Albumin' tab is closed<br/>
+
+17.1: Select 'Therapeutic Category' tab from the left navigation under 'Browse By'<br/>
+
+17.2: Verify 'Therapeutic Category' tab is selected<br/>
+
+18.1: Select 'C'<br/>
+
+18.2: Dismiss Alert Notifications if displayed<br/>
+
+18.3: Verify List of Therapeutic Category for C is displayed in the right pane<br/>
+
+19.1: Select 'Cardiovascular Agents'<br/>
+
+19.2: Dismiss Alert Notifications if displayed<br/>
+
+19.3: Verify List of 'Cardiovascular Agents' is displayed in the right pane<br/>
+
+20.1: Select 'Digoxin'<br/>
+
+20.2: Dismiss Alert Notifications if displayed<br/>
+
+20.3: Verify 'Digoxin' is displayed with 'Doses' and 'References' sections are expanded.<br/>
+
+21.1: Select 'VIN Veterinary Drug Handbook' logo from the left upper corner<br/>
+
+22.1: Verify 'VIN Veterinary Drug Handbook' main page is displayed<br/>
+
+23.1: Logout Application<br/>
+
+23.2: Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>225</td>
+<td>com.vin.testscripts.VVDHHappyPath@2cbb3d47</td></tr>
+<tr>
+<td title='com.vin.testscripts.ValidLoginToVin.validLoginToVin()'><b>validLoginToVin</b><br>Test class: com.vin.testscripts.ValidLoginToVin<br/>
+<a href="#Output-1567127499" onClick='toggleBox("Output-1567127499", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1567127499" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1567127499">
+
+1: verify VIN Promo page is loaded <br/>
+
+2: Select the LOGIN button<br/>
+
+3: Verify login page is displayed<br/>
+
+4: Log in to the Portal <br/>
+
+5: Verify Security Question Page displayed<br/>
+
+6: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+7: Verify Front Page displayed<br/>
+
+8: Dismiss Notifications<br/>
+
+9: Logout application<br/>
+
+10: Verify Logout Page displayed<br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>com.vin.testscripts.ValidLoginToVin@27c86f2d</td></tr>
+<tr>
+<td title='com.vin.testscripts.BodySurfaceHappyPath.verifyBodySurfaceHappyPath()'><b>verifyBodySurfaceHappyPath</b><br>Test class: com.vin.testscripts.BodySurfaceHappyPath<br/>
+<a href="#Output-829891099" onClick='toggleBox("Output-829891099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-829891099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-829891099">
+
+1.1: Bringing up VIN page<br/>
+
+1.1: Navigate to:  https://beta.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=7131876<br/>
+
+1.2: Verify login page is displayed (Title: Login)<br/>
+
+1.3: User should be directed to Body Surface Calculator<br/>
+
+1.4: Dismiss Alert Notification if displayed<br/>
+
+2.1: Select species from species drop down<br/>
+
+2.2: Verify user is able to select species from drop down<br/>
+
+3.1: Enter weights in lbs<br/>
+
+3.2: Verify user is able to enter an amount. Kgs are calculated automatically<br/>
+
+4.1: Select Calculate<br/>
+
+4.2: Verify results are calculated in the chart<br/>
+
+5.1: Select Reset<br/>
+
+5.2: Select ok on 'Do you want to clear all your inputs?' modal<br/>
+
+5.3: Verify user is able to select ok and results are reset<br/>
+
+6.1: Call logout script<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.vin.testscripts.BodySurfaceHappyPath@1198b989</td></tr>
+<tr>
+<td title='com.vin.testscripts.BromideCalculatorKBrHappyPath.verifyBromideCalculatorKBrHappyPath()'><b>verifyBromideCalculatorKBrHappyPath</b><br>Test class: com.vin.testscripts.BromideCalculatorKBrHappyPath<br/>
+<a href="#Output-1957480696" onClick='toggleBox("Output-1957480696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1957480696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1957480696">
+
+1.0: Bringing VIN Page<br/>
+
+1.1: Go to https://www.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=9435010<br/>
+
+1.2: Login to portal<br/>
+
+1.2.1: Verify Security Question Page displayed<br/>
+
+1.2.2: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.3: User should be directed to BromideCalculator<br/>
+
+1.4: Dismiss Alert Notification if displayed<br/>
+
+2.1: KBr tab should be selected by default<br/>
+
+2.2: Enter Weight in lbs Text Field<br/>
+
+2.3: Verify user is able to enter numeric text. KGs are calculated automatically<br/>
+
+2.4: Select mg/ml radio button<br/>
+
+2.5: Verify user is able to select radio button<br/>
+
+2.6: Enter 300 in mg/ml text field<br/>
+
+2.7: Verify user is able to enter numeric text<br/>
+
+3.1: Select 'No' on the Phenobarbital radio buttons<br/>
+
+3.2: Verify user is able to select radio button<br/>
+
+3.3: Select 250 mg/kg from total load drop down<br/>
+
+3.4: Verify user is able to select from total load drop down<br/>
+
+4.1: Select '3' from Days to Load drop down<br/>
+
+4.2: Verify user is able to select from days to load drop down<br/>
+
+5.1: Select '1' from Number of doses per day drop down<br/>
+
+5.2: Verify user is able to select from number of doses<br/>
+
+6.1: Select Calculate<br/>
+
+6.2: Verify results are calculated in the table below<br/>
+
+6.3: Select Reset<br/>
+
+6.4: Verify user is able to reset<br/>
+
+7.1: Call logout script<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.vin.testscripts.BromideCalculatorKBrHappyPath@6a01e23</td></tr>
+<tr>
+<td title='com.vin.testscripts.BromideCalculatorNaBrHappyPath.verifyBromideCalculatorNaBrHappyPath()'><b>verifyBromideCalculatorNaBrHappyPath</b><br>Test class: com.vin.testscripts.BromideCalculatorNaBrHappyPath<br/>
+<a href="#Output-1648318149" onClick='toggleBox("Output-1648318149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1648318149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1648318149">
+
+1.0: Bringing VIN Page<br/>
+
+1.1: Go to https://www.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=9435010<br/>
+
+1.2: Login to portal<br/>
+
+1.2.1: Verify Security Question Page displayed<br/>
+
+1.2.2: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.3: User should be directed to BromideCalculator<br/>
+
+1.4: Dismiss Alert Notification if displayed<br/>
+
+2.1: KBr tab should be selected by default<br/>
+
+2.2: Select NaBr tab<br/>
+
+2.3: Verify user is able to select NaBr tab<br/>
+
+2.2: Enter Weight in lbs Text Field<br/>
+
+2.3: Verify user is able to enter numeric text. KGs are calculated automatically<br/>
+
+2.6: Enter 300 in mg/ml text field<br/>
+
+2.7: Verify user is able to enter numeric text<br/>
+
+3.1: Select 'yes' on the Phenobarbital radio buttons<br/>
+
+3.2: Verify user is able to select radio button<br/>
+
+3.3: Select 382mg/kg from total load drop down<br/>
+
+3.4: Verify user is able to select from total load drop down<br/>
+
+4.1: Select '4' from Days to Load drop down<br/>
+
+4.2: Verify user is able to select from days to load drop down<br/>
+
+5.1: Select '3' from Number of doses per day drop down<br/>
+
+5.2: Verify user is able to select from number of doses<br/>
+
+6.1: Select Calculate<br/>
+
+6.2: Verify results are calculated in the table below<br/>
+
+6.3: Select Reset<br/>
+
+6.4: Verify user is able to reset<br/>
+
+7.1: Call logout script<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.vin.testscripts.BromideCalculatorNaBrHappyPath@13c10b87</td></tr>
+<tr>
+<td title='com.vin.testscripts.CRIHappyPath.verifyCRIHappyPath()'><b>verifyCRIHappyPath</b><br>Test class: com.vin.testscripts.CRIHappyPath<br/>
+<a href="#Output-1536026747" onClick='toggleBox("Output-1536026747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1536026747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1536026747">
+
+1.1: Navigate to Constant Rate Infusion Calculator LongLink @ beta.vin.com...<br/>
+
+1.2: Verify login page is displayed<br/>
+
+1.3: Log in to the Portal <br/>
+
+1.4: Verify Security Question Page displayed<br/>
+
+1.5: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.6:  Dismiss Notifications if displayed<br/>
+
+2.1: Select cat<br/>
+
+2.2: Verify User is able to select species. Dog is selected by default<br/>
+
+3.1 Enter 35 lbs<br/>
+
+3.2  Verify User is able to enter weight and kgs are converted automatically<br/>
+
+4.1 Select single drug<br/>
+
+4.2 Verify User is able to select single drug. Single drug is selected by default<br/>
+
+5.1 Select Alfaxalone<br/>
+
+5.2  Verify User is able to make drug selection. After selecting drug Infusion rate and drup concentration are auto filled with drug selection.<br/>
+
+6.1 Enter .2<br/>
+
+6.2 Verify User is able to enter numeric text. <br/>
+
+7.1 Select 10 mg/ml <br/>
+
+7.2 Verify User is able to make selection<br/>
+
+8.1 Select 'Adding to volume'<br/>
+
+8.2 Verify User is able to select the 'Adding to volume' radio button<br/>
+
+9.1 Select 1000ml from bag size drop down<br/>
+
+9.2 Verify User is able to make selection from drop down. <br/>
+
+10.1 Select ml/hr radio button <br/>
+
+10.2 Verify User is able to select ml/hr radio button<br/>
+
+11.1 Enter 100<br/>
+
+11.2 Verify User is able to enter fluid rate<br/>
+
+12.1 Select calculate<br/>
+
+12.2 Volume of drug to add:3.19ml  <br/>
+
+12.3  Verify Infusion (dose) rate: .2mg/kg/hr<br/>
+
+12.4 Flow rate: 100 ml/hr (2400 ml/day<br/>
+
+12.5 Estimated time: 10 hrs (0.42 days)<br/>
+
+13.1 Select clear drug info8<br/>
+
+13.2 Drug information and results are erased but species selection and weight inputs remain<br/>
+
+14.1 Select reset<br/>
+
+14.2 Pop up modal asking user if they want to clear all inputs will display. Select yes, weight and species are cleared. Dog remains selected by default. <br/>
+
+15.1: logout Application<br/>
+
+15.2: verify logout<br/>
+</div>
+</td>
+<td></td>
+<td>92</td>
+<td>com.vin.testscripts.CRIHappyPath@add0edd</td></tr>
+<tr>
+<td title='com.vin.testscripts.CertificationAndHonorsHappyPath.verifyCertificationAndHonorsHappyPath()'><b>verifyCertificationAndHonorsHappyPath</b><br>Test class: com.vin.testscripts.CertificationAndHonorsHappyPath<br/>
+<a href="#Output-470644341" onClick='toggleBox("Output-470644341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-470644341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-470644341">
+
+1.1: Bringing up VIN page<br/>
+
+2.1: Select the LOGIN button<br/>
+
+2.2: Verify login page is displayed (Title: Login)<br/>
+
+2.3: Log in to the Portal <br/>
+
+2.4: Verify Security Question Page displayed (Title: VIN – Security Question)<br/>
+
+2.5: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+2.6: verify front page is displayed<br/>
+
+3.1: Dismiss alert pop up<br/>
+
+4.1: Open MyVIN by clicking on MyVIN tab on the top of navigation bar<br/>
+
+4.2: MyStuff page opens up in new window<br/>
+
+5.1:Dismiss alert pop up<br/>
+
+6.1: Click on  Profile by clicking on  profile and click on certification & honors<br/>
+
+6.2: certification & honors page loads<br/>
+
+7.1: Dismiss alert pop up<br/>
+
+8.1: Click on Add Certification<br/>
+
+8.2: Add Certification window pops up<br/>
+
+9.1: Select ACVIM  board from board list<br/>
+
+9.2: Selection was successful<br/>
+
+10.1: From Month field drop down select month April<br/>
+
+10.2: Month set to April value<br/>
+
+11.1: Select Cardilog from subject field drop down list<br/>
+
+11.2: Subject set to cardilogy<br/>
+
+12.1: In year field type 2000 <br/>
+
+12.2: Year field set to 2000 value<br/>
+
+13.1: In year field click on down arrow<br/>
+
+13.2: year value changes automatically to 2001<br/>
+
+14.1: In year field click on up arrow<br/>
+
+14.2: year value changes automatically to 2000<br/>
+
+15.1: Click on Add<br/>
+
+15.2: Certification added. <br/>
+
+16.1: Click on x to delete added cerification<br/>
+
+16.2: Certification entry deleted<br/>
+
+17.1: Add Honor<br/>
+
+17.2: Add Honor window pops up<br/>
+
+18.1: Select CCRP board from boards list<br/>
+
+18.2: Board set to CCRP value<br/>
+
+19.1: Subject sets automatically to Physical Rehabilitation<br/>
+
+20.1: From Month field drop down select month April<br/>
+
+20.2: Month set to April value<br/>
+
+21.1: In year field type 2000 <br/>
+
+21.2: Year field set to 2000 value<br/>
+
+22.1: In year field click on down arrow<br/>
+
+22.2: year value changes automatically to 2001<br/>
+
+23.1.1: In year field click on up arrow<br/>
+
+23.2: year value changes automatically to 2000<br/>
+
+24.1: Click on Add<br/>
+
+24.2: Honor added. <br/>
+
+25.1: Delete Honor by clicking on delete icon<br/>
+
+25.2: Honor entry deleted. Delete was successful message displays<br/>
+
+Close The MyVIN Window<br/>
+
+Logout the Selenium User<br/>
+
+Verify the log out page<br/>
+</div>
+</td>
+<td></td>
+<td>122</td>
+<td>com.vin.testscripts.CertificationAndHonorsHappyPath@22635ba0</td></tr>
+<tr>
+<td title='com.vin.testscripts.DoseCalculatorHappyPath.verifyDoseCalculatorHappyPath()'><b>verifyDoseCalculatorHappyPath</b><br>Test class: com.vin.testscripts.DoseCalculatorHappyPath<br/>
+<a href="#Output-1059776883" onClick='toggleBox("Output-1059776883", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1059776883" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1059776883">
+
+1.1: Bringing up VIN page<br/>
+
+1.2: Navigate to https://www.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=8913032<br/>
+
+1.3: Verify login page is displayed (Title: Login)<br/>
+
+1.4: Log in to the Portal <br/>
+
+1.5: Verify Security Question Page displayed (Title: VIN – Security Question)<br/>
+
+1.6: Dismiss notification if displayed<br/>
+
+1.7: User will naviagate to dose calculator<br/>
+
+2.1: Enter Drug Name<br/>
+
+2.2: User is able to enter drug name<br/>
+
+2.3: Auto fill for drug options will populate<br/>
+
+3.1: Select species from drop down<br/>
+
+3.2: User is able to select a species<br/>
+
+4.1: Enter weight (lb)<br/>
+
+4.2: User is able to enter numeric text.<br/>
+
+4.3: KGs are calculated automatically<br/>
+
+5.1: Select an indication from drop down<br/>
+
+5.2: User is able to make selection from drop down list<br/>
+
+6.1: Select a dose range from drop down<br/>
+
+6.2: User is able to make selection from drop down list<br/>
+
+7.1: Calculate<br/>
+
+7.2: Result populate below<br/>
+
+8.1: Reset Calculator<br/>
+
+8.2: Values are cleared<br/>
+
+9.1: Logout from selenium user<br/>
+
+9.2: Verify user is logged out successfully<br/>
+</div>
+</td>
+<td></td>
+<td>67</td>
+<td>com.vin.testscripts.DoseCalculatorHappyPath@7a52f2a2</td></tr>
+<tr>
+<td title='com.vin.testscripts.EchocardiogramHappyPath.verifyEchocardiogramHappyPath()'><b>verifyEchocardiogramHappyPath</b><br>Test class: com.vin.testscripts.EchocardiogramHappyPath<br/>
+<a href="#Output-174069753" onClick='toggleBox("Output-174069753", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-174069753" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-174069753">
+
+1.1: Bringing up VIN page<br/>
+
+1.1: Navigate to:  https://beta.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=7135481<br/>
+
+1.2: Verify login page is displayed (Title: Login)<br/>
+
+1.3: User should be directed to Echocardiogram calculator<br/>
+
+1.4: Dismiss Alert Notification if displayed<br/>
+
+2.1: Select dog from species drop down<br/>
+
+2.2: Verify user is able to select dog from drop down<br/>
+
+3.1: Enter 25lb weight amount in lbs<br/>
+
+3.2: Verify user is able to enter lbs in weight field and kgs are calculated automatically<br/>
+
+4.1: Enter amount in LVIDd text box = 1<br/>
+
+4.2: Verify that user is able to enter 1 in text box<br/>
+
+5.1: Enter amount in LVIDs text box = 1<br/>
+
+5.2: Verify that user is able to enter 1 in text box<br/>
+
+6.1: Enter amount in IVSd text box = 1<br/>
+
+6.2: Verify that user is able to enter 1 in text box<br/>
+
+7.1: Enter amount in LVWd text box = 1<br/>
+
+7.2: Verify that user is able to enter 1 in text box<br/>
+
+8.1: Enter amount in LAs text box = 1<br/>
+
+8.2: Verify that user is able to enter 1 in text box<br/>
+
+9.1: Enter amount in Aod text box = 1<br/>
+
+9.2: Verify that user is able to enter 1 in text box<br/>
+
+10.1: Set echo experience level to moderate/low (selected by default)<br/>
+
+11:1 Select calculate<br/>
+
+11.2: Verify results are calculated below<br/>
+
+12.1: Select reset<br/>
+
+13.1: Select ok on 'Do you want to clear all your inputs?' modal<br/>
+
+3.2: Verify user is able to select ok and results are cleared<br/>
+
+13.3: Call logout script<br/>
+</div>
+</td>
+<td></td>
+<td>104</td>
+<td>com.vin.testscripts.EchocardiogramHappyPath@6e75aa0d</td></tr>
+<tr>
+<td title='com.vin.testscripts.EmergencyDrugCannineHappyPath.verifyEmergencyDrugCannineHappyPath()'><b>verifyEmergencyDrugCannineHappyPath</b><br>Test class: com.vin.testscripts.EmergencyDrugCannineHappyPath<br/>
+<a href="#Output-996957972" onClick='toggleBox("Output-996957972", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-996957972" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-996957972">
+
+1.0: Bringing VIN Page<br/>
+
+1.1: Navigate to https://beta.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=7135485<br/>
+
+1.2: Call login script<br/>
+
+1.2.1: Verify Security Question Page displayed<br/>
+
+1.2.2: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.3: Navigate to Emergeny Drug Calculator<br/>
+
+1.4: User should be directed to Emergency Drug Calculator<br/>
+
+1.5: Dismiss Alert Notification if displayed<br/>
+
+2.1: Verify Species is set to dog by default<br/>
+
+2.2: Select dog for species<br/>
+
+2.3: Enter Weight in lbs Text Field<br/>
+
+2.4: Verify User is able to enter numeric text. KGs are calculated automatically<br/>
+
+3.1: Select Calculate<br/>
+
+3.2: Verify results are calculated in the table below<br/>
+
+3.3: Select Reset<br/>
+
+3.4 Pop up modal will display asking the user if they want to clear results. Select ok<br/>
+
+4..1: Logout <br/>
+
+4.2:  Verify Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>com.vin.testscripts.EmergencyDrugCannineHappyPath@402e37bc</td></tr>
+<tr>
+<td title='com.vin.testscripts.EmergencyDrugFellineHappyPath.verifyEmergencyDrugFellineHappyPath()'><b>verifyEmergencyDrugFellineHappyPath</b><br>Test class: com.vin.testscripts.EmergencyDrugFellineHappyPath<br/>
+<a href="#Output-2124522667" onClick='toggleBox("Output-2124522667", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2124522667" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2124522667">
+
+1.0: Bringing VIN Page<br/>
+
+1.1: Navigate to https://beta.vin.com/members/cms/project/defaultadv1.aspx?pid=618&id=7135485<br/>
+
+1.2: Log in to the Portal <br/>
+
+1.2.1: Verify Security Question Page displayed<br/>
+
+1.2.2: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.3: Navigate to Emergeny Drug Calculator<br/>
+
+1.4: User should be directed to Emergency Drug Calculator<br/>
+
+1.5: Dismiss Alert Notification if displayed<br/>
+
+2.1: Verify Species is set to dog by default<br/>
+
+2.2: Select Cat for species<br/>
+
+2.3: Verify cat is selected<br/>
+
+2.4: Enter Weight in lbs Text Field<br/>
+
+2.5: Verify User is able to enter numeric text. KGs are calculated automatically<br/>
+
+3.1: Select Calculate<br/>
+
+3.2: Verify results are calculated in the table below<br/>
+
+3.3: Select Reset<br/>
+
+3.4 Pop up modal will display asking the user if they want to clear results. Select ok<br/>
+
+4..1: Logout <br/>
+
+4.2:  Verify Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>com.vin.testscripts.EmergencyDrugFellineHappyPath@79ad8b2f</td></tr>
+<tr>
+<td title='com.vin.testscripts.MyVINProfileInterestsHappyPath.verifyMyVINProfileInterestsHappyPath()'><b>verifyMyVINProfileInterestsHappyPath</b><br>Test class: com.vin.testscripts.MyVINProfileInterestsHappyPath<br/>
+<a href="#Output-1262092760" onClick='toggleBox("Output-1262092760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1262092760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1262092760">
+
+1.1: Navigate to https://www.vin.com/vin/<br/>
+
+1.2: Call Login method<br/>
+
+1.3: Select 'MyVIN' from the navigation menu<br/>
+
+1.4: Dismiss Alert Notifications if displayed<br/>
+
+2.1: Select Profile<br/>
+
+2.2: Click on 'Interests'<br/>
+
+2.3: Select 'Anatomy Pathology' under 'Complete List of Interests'<br/>
+
+2.4: Select 'Add'<br/>
+
+2.5: Verify that 'Anatomy Pathology' is now listed under 'Your Interests'<br/>
+
+3.1: Select 'Colleagues View'<br/>
+
+3.2: Verify Page refreshes and loads 'Colleagues View' successfully<br/>
+
+3.3: Dismiss Alert Notifications if displayed<br/>
+
+3.4: Verify that 'Anatomy Pathology' is listed next to 'Interests'<br/>
+
+3.5: Select Vinners view<br/>
+
+3.6: Verify Page refreshes and loads 'Vinners View' successfully<br/>
+
+3.7: Dismiss Alert Notifications if displayed<br/>
+
+3.8: Verify that 'Anatomy Pathology' is listed next to 'Interests'<br/>
+
+4.1: Select Profile<br/>
+
+4.2: Click on 'Interests'<br/>
+
+4.3: Select 'Anatomy Pathology' under 'Your Interests'<br/>
+
+4.4: Select 'Remove'<br/>
+
+4.5: Verify that 'Anatomy Pathology' is no longer listed under 'Your Interests'<br/>
+
+5.1: Select 'Colleagues View'<br/>
+
+5.2: Verify Page refreshes and loads 'Colleagues View' successfully<br/>
+
+5.3: Dismiss Alert Notifications if displayed<br/>
+
+5.4: Verify that 'Anatomy Pathology' is no longer listed next to 'Interests'<br/>
+
+5.5: Select Vinners view<br/>
+
+5.6: Verify Page refreshes and loads 'Vinners View' successfully<br/>
+
+5.7: Dismiss Alert Notifications if displayed<br/>
+
+5.8: Verify that 'Anatomy Pathology' is no longer listed next to 'Interests'<br/>
+
+6.1: Select 'X' to close MyVIN<br/>
+
+6.2: Call Logout method<br/>
+</div>
+</td>
+<td></td>
+<td>329</td>
+<td>com.vin.testscripts.MyVINProfileInterestsHappyPath@11dc3715</td></tr>
+<tr>
+<td title='com.vin.testscripts.NewsHappyPath.verifyNewsHappyPath()'><b>verifyNewsHappyPath</b><br>Test class: com.vin.testscripts.NewsHappyPath<br/>
+<a href="#Output-664649032" onClick='toggleBox("Output-664649032", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-664649032" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-664649032">
+
+1.1: verify VIN Promo page is loaded <br/>
+
+1.2: Select the LOGIN button<br/>
+
+1.3: Verify login page is displayed<br/>
+
+1.4: Log in to the Portal <br/>
+
+1.5: Verify Security Question Page displayed<br/>
+
+1.6: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.7: Verify Front Page displayed<br/>
+
+1.8 Dismiss Alert Notifications if displayed<br/>
+
+2.1: Navigate to News through Navigation bar: Library<br/>
+
+2.2: Select the first article under ‘VIN News Service’<br/>
+
+2.3: Selected news article is displayed in the same tab<br/>
+
+2.4: Dismiss Alert Notifications if displayed<br/>
+
+3.1 Click on the VIN News Service logo on the top of the page<br/>
+
+3.2  Verify News main page is displayed<br/>
+
+3.3: Dismiss Alert Notifications if displayed<br/>
+
+4.1: Select ‘Read article’ from the top of the page for a story<br/>
+
+4.2 Selected article is displayed<br/>
+
+4.3: Click on the VIN News Service logo on the top of the page<br/>
+
+4.4: Verify user is back on VIN News Home Page<br/>
+
+4.5: Dismiss Alert Notifications if displayed<br/>
+
+5.1  Click on a News article link under 'Latest News' <br/>
+
+5.2 The page loads the selected news article successfully. <br/>
+
+5.3: Dismiss Alert Notifications if displayed<br/>
+
+6.1: Type in 'AVMA' on the text box under 'Search VIN News Service'<br/>
+
+6.2: AVMA is populated in the search bar<br/>
+
+6.3: Click the ‘Go’ button<br/>
+
+6.4: Search results are displayed<br/>
+
+6.5: Dismiss Alert Notifications if displayed<br/>
+
+6.6: Verify Each result marked with number and uncheck check box icon<br/>
+
+7.1: Click on the 'Sort by relevance' button and then select ‘Sort by Date’<br/>
+
+7.2: Dismiss Alert Notifications if displayed<br/>
+
+8.1: Click on the VIN News Service logo on the top of the page<br/>
+
+8.2: VIN News Service page loaded successfully<br/>
+
+8.3:Dismiss Alert Notifications if displayed <br/>
+
+9.1: Scroll down and click on 'View all articles'<br/>
+
+9.2: The page expands the list of News articles<br/>
+
+9.3:Dismiss Alert Notifications if displayed <br/>
+
+10.1: logout application<br/>
+
+10.2: Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>210</td>
+<td>com.vin.testscripts.NewsHappyPath@10db82ae</td></tr>
+<tr>
+<td title='com.vin.testscripts.SearchHappyPath.verifySearchHappyPath()'><b>verifySearchHappyPath</b><br>Test class: com.vin.testscripts.SearchHappyPath<br/>
+<a href="#Output-229190647" onClick='toggleBox("Output-229190647", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-229190647" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-229190647">
+
+1.1: verify VIN Promo page is loaded (Title: Veterinary Information Network®, Inc. – VIN)<br/>
+
+1.2: Select the LOGIN button<br/>
+
+1.3:Verify login page is displayed (Title: Login)<br/>
+
+1.4: Log in to the Portal <br/>
+
+1.5:Verify Security Question Page displayed (Title: VIN – Security Question)<br/>
+
+1.6: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.7:  Verify Front Page displayed<br/>
+
+1.8 If Alert noticiation modal displays, dismiss alert notification window by selecting "Dismiss" <br/>
+
+2.1:  Click on Search from the top navigation bar<br/>
+
+2.2 Verify Search page is  loaded<br/>
+
+3.1 Verify If Alert noticiation modal displays, dismiss alert notification window by selecting "Dismiss"<br/>
+
+4.1 Enter  in 'taurine' in search bar<br/>
+
+4.2 Verify field accepts entry, auto-suggestion list availble as user types in. <br/>
+
+4.3 verify search word is displayed first in the list as the most relevant<br/>
+
+5.1  click on search icon magnifyer <br/>
+
+5.2 Verify search results displayed and listed with hyperlinks on page. <br/>
+
+5.3: Dismiss Notifications if displayed<br/>
+
+6.1 click on very first search result: Taurine<br/>
+
+6.2 6.2 Verify The selected document is displayed in a same tab<br/>
+
+6.3: Dismiss Notifications if displayed<br/>
+
+6.4: Close the document tab and return back to search result page<br/>
+
+7.1 Expand drop down list of Any Species and choose Cats or Dogs filter<br/>
+
+7.2 Verify page refreshes automatically. Search results refresh to results that has cat or doc in Keyword tag<br/>
+
+7.3  Dismiss Notifications if displayed<br/>
+
+8.1: select the checkbox for first 2 results in the list<br/>
+
+8.2: Select ‘View Checked’<br/>
+
+8.3: Select the first option from the list: ‘View Checked Results’<br/>
+
+8.4: New window is displayed with selected results<br/>
+
+8.5: Dismiss Notifications if displayed<br/>
+
+8.6: Close the window and return to the search results page<br/>
+
+9.1: Select MySearches button from the top of the page<br/>
+
+9.2: Verify MyActivities pop up window is displayed and My Searches tab is selected<br/>
+
+9.3: Dismiss Notifications if displayed<br/>
+
+9.4: Select the very first result from My Searches list<br/>
+
+9.5: Verify Search result page is displayed<br/>
+
+9.6: Dismiss Notifications if displayed<br/>
+
+10.1: logout application<br/>
+
+10.2: Logging off from VIN is successful<br/>
+</div>
+</td>
+<td></td>
+<td>177</td>
+<td>com.vin.testscripts.SearchHappyPath@78b729e6</td></tr>
+<tr>
+<td title='com.vin.testscripts.VeterinaryHappyPath.verifyVeterinaryHappyPath()'><b>verifyVeterinaryHappyPath</b><br>Test class: com.vin.testscripts.VeterinaryHappyPath<br/>
+<a href="#Output-1804911104" onClick='toggleBox("Output-1804911104", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1804911104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1804911104">
+
+1.0: Bringing VIN Page<br/>
+
+1.1: Navigate to Veterinary Partner - https://veterinarypartner.vin.com/ <br/>
+
+2.1: Select the 'Browse Categories' button<br/>
+
+2.2: Select the 'Dog' icon<br/>
+
+2.3: Select an article link from right pane<br/>
+
+3.1: Type 'Pit Bull' in the search bar<br/>
+
+3.2  Select the dropdown for 'All' and select 'Dogs'<br/>
+
+3.3: Click on the 'Go' button on the search bar<br/>
+
+3.4: Select the second article link from the results page<br/>
+
+4.1: Select on the Veterinary Partner logo<br/>
+
+5.1: Click on 'Cats' under the 'Articles by Species' section<br/>
+
+5.2: Click on an icon to open an article in a new tab/window<br/>
+
+6.1: Select the email icon<br/>
+
+6.2: Verify the email popup is displayed<br/>
+
+6.3: Select Cancel<br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>com.vin.testscripts.VeterinaryHappyPath@78047b92</td></tr>
+<tr>
+<td title='com.vin.testscripts.Vindex.vinDex()'><b>vinDex</b><br>Test class: com.vin.testscripts.Vindex<br/>
+<a href="#Output-1460727430" onClick='toggleBox("Output-1460727430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1460727430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1460727430">
+
+1.0: verify VIN Promo page is loaded <br/>
+
+1.1.0: Call Login method<br/>
+
+1.1.1: Verify login page is displayed<br/>
+
+1.1.2: Log in to the Portal <br/>
+
+1.1.3: Verify Security Question Page displayed<br/>
+
+1.1.4: Enter Security Answer and Login if Security Question Page displayed<br/>
+
+1.2: Dismiss Alert Notifications if displayed<br/>
+
+2.1: Select 'VINdex' from the toolbar<br/>
+
+2.1.1 Verify VINDEX pop out window is displayed <br/>
+
+2.2:  Select the VINdex tab<br/>
+
+3.1  Select 'Medical FAQs' link<br/>
+
+3.2: Dismiss Alert Notifications if displayed<br/>
+
+3.2.1:  Verify Medical FAQs page is loaded <br/>
+
+4.1: Select 'Drug Resourc/es' link<br/>
+
+4.2: Dismiss Alert Notifications if displayed<br/>
+
+4.2.1 Verify Drug Resources page is loaded <br/>
+
+5.1  Select 'Drug Hndbk. VIN (VVDH)' link<br/>
+
+5.2: Dismiss Alert Notifications if displayed<br/>
+
+5.2.1: Verify VIN Veterinary Drug Handbook page is loaded <br/>
+
+6.1: Select 'Drug Formulary, VIN Exotic' link<br/>
+
+6.2: Dismiss Alert Notifications if displayed<br/>
+
+6.2.1: Verify VIN Formulary page is loaded <br/>
+
+7.1: Select '20 Years of VIN' link<br/>
+
+7.2: Dismiss Alert Notifications if displayed<br/>
+
+7.2.1: Verify 20 years of VIN page is loaded <br/>
+
+8.1: Select '3D Learning - IVALA' link<br/>
+
+8.2: Dismiss Alert Notifications if displayed<br/>
+
+8.2.1: Verify 3D Learning IVALA page is loaded <br/>
+
+9.1 Select 'Abbreviations' link<br/>
+
+9.2: Dismiss Alert Notifications if displayed<br/>
+
+9.2.1 Common Abbreviations And Acronyms page is loaded <br/>
+
+10.1: Select 'About This Folder Pages' link<br/>
+
+10.2: Dismiss Alert Notifications if displayed<br/>
+
+10.2.1: Vet-to-Vet About Pages is loaded <br/>
+
+11.1: Select 'Anatomy in 3D' Link<br/>
+
+11.2: Dismiss Alert Notifications if displayed <br/>
+
+11.2.1: Learn anatomy in 3d  Pages is loaded <br/>
+
+12.1: Select 'Anesthesia Protocols' link<br/>
+
+12.2: Dismiss Alert Notifications if displayed <br/>
+
+12.2.1: Learn anatomy in 3d  Pages is loaded <br/>
+
+13.1 Select 'Article copies' link<br/>
+
+13.2: Dismiss Alert Notifications if displayed <br/>
+
+13.2.1: How do I order the full text of an article? page is loaded <br/>
+
+14.1 Select 'Associate' link<br/>
+
+14.2: Dismiss Alert Notifications if displayed <br/>
+
+14.2 Associate page is loaded <br/>
+
+15.1: Select 'BestBETs for Vets' link<br/>
+
+15.2: Dismiss Alert Notifications if displayed <br/>
+
+15.2.1: BestBETs for vets page is loaded<br/>
+
+16.1: Select 'BETA.VIN.COM' link<br/>
+
+16.2: Dismiss Alert Notifications if displayed <br/>
+
+16.2.1: BestBETs for vets page is loaded<br/>
+
+17.1: Select 'VIN Video Tips' link<br/>
+
+17.2: Dismiss Alert Notifications if displayed <br/>
+
+17.2.1: BestBETs for vets page is loaded<br/>
+
+18.1 Select 'Books' link<br/>
+
+18.2: Dismiss Alert Notifications if displayed <br/>
+
+18.2.1 Books & Manuals page is loaded <br/>
+
+19.1 Select 'VIN Store' link<br/>
+
+19.2: Dismiss Alert Notifications if displayed <br/>
+
+19.2.1 VIN Book store is loaded <br/>
+
+20.1 Select 'Calculators/Conversions' link<br/>
+
+20.2: Dismiss Alert Notifications if displayed <br/>
+
+20.2.1 Calculators page is loaded <br/>
+
+21.1 Select 'Cases: Challenging & Fun' link<br/>
+
+21.2: Dismiss Alert Notifications if displayed <br/>
+
+21.2.1 Avian & Exotics page is loaded <br/>
+
+22.1 Select 'CE' link<br/>
+
+22.2: Dismiss Alert Notifications if displayed <br/>
+
+22.2.1 Continual Education page is loaded <br/>
+
+23.1 Select 'Classified Ads' link<br/>
+
+23.2: Dismiss Alert Notifications if displayed <br/>
+
+23.2.1 VETQuest Classified page is loaded <br/>
+
+24.1 Select 'Client Education' link<br/>
+
+24.2: Dismiss Alert Notifications if displayed <br/>
+
+24.2.1 Forms and Handouts page is loaded <br/>
+
+25.1 Select 'Clinical Trials/Research' link<br/>
+
+25.2: Dismiss Alert Notifications if displayed <br/>
+
+25.2.1 Vet Clinical Trials page is loaded <br/>
+
+26.1 Select 'Contact VIN' link<br/>
+
+26.2: Dismiss Alert Notifications if displayed <br/>
+
+26.2.1 Contact us page is loaded <br/>
+
+27.1: Select 'Continual Education' link<br/>
+
+27.2: Dismiss Alert Notifications if displayed <br/>
+
+27.2.1 Contact us page is loaded <br/>
+
+28.1 Select 'Drug Label Database' link<br/>
+
+28.2: Dismiss Alert Notifications if displayed <br/>
+
+28.2.1 DrugLabel database page displayed<br/>
+
+29.1: Select 'eVetsites' link<br/>
+
+29.2: Dismiss Alert Notifications if displayed <br/>
+
+29.2.1: eVETSItes page is loaded <br/>
+
+30.1: Select 'FAQs - Medical' link<br/>
+
+30.2: Dismiss Alert Notifications if displayed <br/>
+
+30.2.1: Verify FAQ medical page is opened<br/>
+
+31.1: Select 'Forms & Handouts' link<br/>
+
+31.2: Dismiss Alert Notifications if displayed <br/>
+
+31.2.1: Verify FAQ medical page is opened<br/>
+
+32.1: Select 'Front Page' link<br/>
+
+32.2: Dismiss Alert Notifications if displayed <br/>
+
+32.2.1: Verify Front page is opened<br/>
+
+33.1: Select 'Fun & Challenging Cases' link<br/>
+
+33.2: Dismiss Alert Notifications if displayed <br/>
+
+33.2.1: Verify Fun and challenging page is opened<br/>
+
+34.1 Select 'Help' link<br/>
+
+34.2: Dismiss Alert Notifications if displayed <br/>
+
+34.2.1 VIN Help Resource Center id displayed <br/>
+
+35.1 Select 'Explore Discover Learn VIN' link<br/>
+
+35.2: Dismiss Alert Notifications if displayed <br/>
+
+35.2.1 Explore, Discover, Learn VIN or How to Use VIN is displayed <br/>
+
+36.1 Select 'Image Library' link<br/>
+
+36.2: Dismiss Alert Notifications if displayed <br/>
+
+36.2.1 Image Library is displayed <br/>
+
+37.1 Select 'Proud to be a VINner' link<br/>
+
+37.2: Dismiss Alert Notifications if displayed <br/>
+
+37.2.1 Proud to be a VINner page is displayed<br/>
+
+38.1 Select 'Insurance Options' link<br/>
+
+38.2: Dismiss Alert Notifications if displayed <br/>
+
+38.2.1 Insurance Products for Veterinarians is displayed  <br/>
+
+39.1 Select 'Journals & Pubs' link<br/>
+
+39.2: Dismiss Alert Notifications if displayed <br/>
+
+39.2.1 Welcome to VIN journals is displayed <br/>
+
+40.1 Select 'Legal Bites' link<br/>
+
+40.2: Dismiss Alert Notifications if displayed <br/>
+
+40.2.1 Legal Specialty Center is displayed <br/>
+
+41.1 Select ' Library' link<br/>
+
+41.2: Dismiss Alert Notifications if displayed <br/>
+
+41.2.1 VIN Library page is displayed<br/>
+
+42.1: Select 'Medical FAQs' link<br/>
+
+42.2: Dismiss Alert Notifications if displayed <br/>
+
+42.2.1 Medical FAQ page is displayed<br/>
+
+43.1 Select 'Message Boards' link<br/>
+
+43.2: Dismiss Alert Notifications if displayed <br/>
+
+43.2.1 VIN Message Boards is displayed <br/>
+
+44.1 Select 'Mentor-procedure videos' link<br/>
+
+44.2: Dismiss Alert Notifications if displayed <br/>
+
+44.2.1 VIN Mentor: Visual Procedures Manual is displayed <br/>
+
+45.1: Select 'Mobile (VIN Homepage).<br/>
+
+45.2: Dismiss Alert Notifications if displayed <br/>
+
+45.2.1 VIN Mobile page is displayed <br/>
+
+46.1 Select 'MSDS Database' link<br/>
+
+46.2: Dismiss Alert Notifications if displayed <br/>
+
+46.2.1 MSDS page is displayed <br/>
+
+47.1 Select 'MyActivities' link<br/>
+
+47.2: Dismiss Alert Notifications if displayed <br/>
+
+47.2.1 Activities page is displayed with 'My most viewed discussion 'tab is selected <br/>
+
+48.1 Select 'MyVIN' link<br/>
+
+48.2: Dismiss Alert Notifications if displayed <br/>
+
+48.2.1 MyStuff page is displayed <br/>
+
+49.1 Select 'News' link<br/>
+
+49.2: Dismiss Alert Notifications if displayed <br/>
+
+49.2.1 VIN News page is displayed<br/>
+
+50.1: Select 'Password Vault (BETA)' link<br/>
+
+50.2: Dismiss Alert Notifications if displayed <br/>
+
+50.2.1: Password vault beta page is displayed<br/>
+
+51.1: Select 'Password Vault (WWW)' link<br/>
+
+51.2: Dismiss Alert Notifications if displayed <br/>
+
+51.2.1: Password vault www page is displayed<br/>
+
+52.1: Select 'Podcasts (VINCasts)<br/>
+
+52.2: Dismiss Alert Notifications if displayed <br/>
+
+52.2.1: podcast page is displayed<br/>
+
+53.1: Select 'Proceedings' link<br/>
+
+53.2: Dismiss Alert Notifications if displayed <br/>
+
+53.2.1 Proceedings by Conference page is displayed <br/>
+
+54.1: Select 'PUBMED" link<br/>
+
+54.2: Dismiss Alert Notifications if displayed <br/>
+
+54.2.1 Pubmed page is displayed <br/>
+
+55.1 Select 'Recall Center' link<br/>
+
+55.2: Dismiss Alert Notifications if displayed <br/>
+
+55.2.1 Drug and Food Recall Center is displayed <br/>
+
+56.1 Select 'Rounds' link<br/>
+
+56.2: Dismiss Alert Notifications if displayed <br/>
+
+56.2.1 Rounds Homepage is displayed <br/>
+
+57.1: Select ' Rounds Transcripts' link<br/>
+
+57.2: Dismiss Alert Notifications if displayed <br/>
+
+57.2.1: Search 4 page is displayed with VIN Rounds filter selected  <br/>
+
+58.1: Select ' Search' link<br/>
+
+58.2: Dismiss Alert Notifications if displayed <br/>
+
+58.2.1: Search 4 page is displayed <br/>
+
+59.1 Select 'Specialty Centers' link<br/>
+
+59.2: Dismiss Alert Notifications if displayed <br/>
+
+59.2.1 Specialty Centers page is displayed <br/>
+
+60.1: Select 'Student Center' link <br/>
+
+60.2: Dismiss Alert Notifications if displayed <br/>
+
+60.2.1 VIN Student Center is displayed  <br/>
+
+61.1: Select 'Surveys' link<br/>
+
+61.2: Dismiss Alert Notifications if displayed <br/>
+
+61.2.1 survey page is displayed  <br/>
+
+62.1: Select 'Tough Questions/Answers' link <br/>
+
+62.2: Dismiss Alert Notifications if displayed <br/>
+
+62.2.1: VINner Answers to Tough Questions is displayed  <br/>
+
+63.1: Select ' Veterinary Partner' link <br/>
+
+63.2: Dismiss Alert Notifications if displayed <br/>
+
+63.2.1: Veterinary Partner page is displayed  <br/>
+
+64.1: Select 'VetQuest' link<br/>
+
+64.2: Dismiss Alert Notifications if displayed <br/>
+
+64.2.1: Veterinary Partner page is displayed  <br/>
+
+65.1 Select 'Vets4Vets' link<br/>
+
+65.2: Dismiss Alert Notifications if displayed <br/>
+
+65.2.1 VETS4VETS page is displayed  <br/>
+
+66.1 Select 'VetzInsight' link<br/>
+
+66.2: Dismiss Alert Notifications if displayed <br/>
+
+66.2.1 VetzInsight portal is displayed  <br/>
+
+67.1: Select 'VINCasts (Rounds Podcasts)' link<br/>
+
+67.2: Dismiss Alert Notifications if displayed <br/>
+
+67.2.1:  Search page is loaded  <br/>
+
+68.1: Select 'VINcyclopedia (Associate)' link<br/>
+
+68.2: Dismiss Alert Notifications if displayed <br/>
+
+68.2.1:  Search page is loaded  <br/>
+
+69.1: Select 'VIN Drug Hndbk. (VVDH)' link<br/>
+
+69.2: Dismiss Alert Notifications if displayed <br/>
+
+69.2.1:  VVDH page is loaded  <br/>
+
+70.1: Select 'VIN Exotic Animal Formulary'<br/>
+
+70.2: Dismiss Alert Notifications if displayed <br/>
+
+70.2.1:  VVDH page is loaded  <br/>
+
+71.1 Select 'VIN Foundation' link<br/>
+
+71.2: Dismiss Alert Notifications if displayed <br/>
+
+71.2.1 VIN Foundation portal is displayed <br/>
+
+72.1 Select '  VIN Policies' link <br/>
+
+72.2: Dismiss Alert Notifications if displayed <br/>
+
+72.2.1 VIN Policies page is displayed <br/>
+
+73.1 Select 'VIN This Week' link <br/>
+
+73.2: Dismiss Alert Notifications if displayed <br/>
+
+73.2.1 VIN this week is displayed  <br/>
+
+74.1 Select 'VINx' link <br/>
+
+74.2: Dismiss Alert Notifications if displayed <br/>
+
+74.2.1 VINx page is displayed <br/>
+
+75.1 Select 'Virtual Clinic' link <br/>
+
+75.2: Dismiss Alert Notifications if displayed <br/>
+
+75.2.1 VIN Virtual Clinic portal is displayed <br/>
+
+76.1 Select 'VSPN' link<br/>
+
+76.2: Dismiss Alert Notifications if displayed <br/>
+
+76.2.1 VSPN page is displayed  <br/>
+
+77.1 Select 'WWW Directory' link <br/>
+
+77.2: Dismiss Alert Notifications if displayed <br/>
+
+77.2.1: WWW Resources page is displayed <br/>
+
+78.1: Close VINdex window<br/>
+
+79.1: Call Logout Method<br/>
+
+79.2: Verify user logged out successfully<br/>
+</div>
+</td>
+<td></td>
+<td>1776</td>
+<td>com.vin.testscripts.Vindex@197d671</td></tr>
+<tr>
+<td title='com.vin.testscripts.VINPromoPage.vinpromopage()'><b>vinpromopage</b><br>Test class: com.vin.testscripts.VINPromoPage<br/>
+<a href="#Output-247855428" onClick='toggleBox("Output-247855428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-247855428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-247855428">
+
+1.1: Go to https://beta.vin.com<br/>
+
+1.2: Scroll down and select the name link under the 'Featured' section<br/>
+
+1.3: Select the 'Home' button<br/>
+
+1.4: Scroll down and select 'More Consultants'<br/>
+
+2.1: Select the 'About VIN' drop down option<br/>
+
+2.2: Select 'About VIN'.<br/>
+
+2.3: Verify 'About VIN' page loads successfully<br/>
+
+3.1: Select the 'About VIN' drop down option<br/>
+
+3.2: Select 'Consultants and Editors'<br/>
+
+3.3: Select 'Alternative Medicine'<br/>
+
+3.4: Verify 'Alternative Medicine' page loads successfully<br/>
+
+3.5: Select 'Susan Wynn'<br/>
+
+3.6: Verify 'Susan Wynn' page loads successfully<br/>
+
+4.1: Select the 'About VIN' drop down option<br/>
+
+4.2: Select 'Representatives'<br/>
+
+4.3: Verify 'Representatives' page loads successfully<br/>
+
+4.4: Select 'Adrian Kreeger'<br/>
+
+4.5: Verify 'Adrian Kreeger' page loads successfully<br/>
+
+4.6: Close the 'Adrian Kreeger' tab.<br/>
+
+5.1: Select the 'About VIN' drop down option<br/>
+
+5.2: Select 'Membership'<br/>
+
+5.3: Verify 'Membership' page loads successfully<br/>
+
+6.1: Select the 'About VIN' drop down option<br/>
+
+6.2: Select 'Proud to be a VINner!'<br/>
+
+6.3: Verify 'Proud to be a VINner!' page loads successfully<br/>
+
+6.4: Select the 'VIN Bookstore' link under 'Pre-printed Veterinary Partner referral cards.'<br/>
+
+6.5: Verify 'VIN Bookstore' page loads successfully<br/>
+
+6.6: Close the 'VIN Bookstore' tab.<br/>
+
+6.7: Select 'Community Store' link<br/>
+
+6.8: Verify 'Community Store' page loads successfully<br/>
+
+6.9: Close the 'Community Store' tab.<br/>
+
+7.1: Select the 'Why VIN' drop down option<br/>
+
+7.2: Select 'Why VIN'.<br/>
+
+7.3: Verify 'Why VIN' page loads successfully<br/>
+
+7.4: Select the 'Why VIN' drop down option<br/>
+
+7.5: Select 'Membership<br/>
+
+7.6: Verify 'Membership' page loads successfully<br/>
+
+8.1: Select the 'VIN Family' drop down option<br/>
+
+8.2: Select 'VSPN'<br/>
+
+8.3: Verify 'VSPN' page loads successfully<br/>
+
+8.4: Close the 'VSPN' tab<br/>
+
+8.4: Select the 'VIN Family' drop down option<br/>
+
+8.6: Select 'VIN Students'<br/>
+
+8.7: Verify 'VIN Students' page loads successfully<br/>
+
+8.8: Close the 'VIN Students' tab<br/>
+
+9.1: Select 'Friends of VIN'<br/>
+
+9.2: Select the 'Conference Home' link under 'ACVIM'<br/>
+
+9.3: Verify 'ACVIM' page loads successfully<br/>
+
+9.4: Close the 'ACVIM' tab<br/>
+
+9.5: Select the 'Proceedings Access' link under 'ACVIM'<br/>
+
+9.6: Verify 'ACVIM Proceedings' page loads successfully<br/>
+
+9.7: Close the ACVIM Proceedings tab<br/>
+
+10.1: Select the 'Contact' drop down option<br/>
+
+10.2: Select 'Contact'<br/>
+
+10.3: Under the 'Name' text field, type 'Selenium'<br/>
+
+10.4: Under the 'Email' text field, type 'selenium@vin.com'<br/>
+
+10.5: Under the 'Subject' text field, type 'Selenium test'<br/>
+
+10.6: Under the 'Message:', type 'This is a Test'<br/>
+
+11.1: Select the 'Contact' drop down option<br/>
+
+11.2: Select 'Membership'<br/>
+
+11.3: Verify 'Membership' page loads successfully<br/>
+
+Close Browser<br/>
+</div>
+</td>
+<td></td>
+<td>421</td>
+<td>com.vin.testscripts.VINPromoPage@69930714</td></tr>
+</table><p>
+</body>
+</html>

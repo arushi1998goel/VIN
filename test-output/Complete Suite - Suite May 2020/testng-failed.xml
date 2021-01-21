@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Complete Suite - Suite May 2020]">
+  <listeners>
+    <listener class-name="com.vin.report.TestCaseTrackingListners"/>
+  </listeners>
+  <test thread-count="5" verbose="5" name="Regression(failed)">
+    <parameter name="browser" value="${browser}"/>
+    <classes>
+      <class name="com.vin.testscripts.MyProfileHappyPath">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="verifyMyProfileHappyPath"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyProfileHappyPath -->
+      <class name="com.vin.testscripts.VINPromoPageOther">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="VINPromoPageOther"/>
+          <include name="afterMainMethod"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.VINPromoPageOther -->
+      <class name="com.vin.testscripts.DocDeliveryHappyPath">
+        <methods>
+          <include name="getTestData"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="afterMainMethod"/>
+          <include name="verifyDocDeliveryHappyPath"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.DocDeliveryHappyPath -->
+      <class name="com.vin.testscripts.MyProfileChangeNameHappyPath">
+        <methods>
+          <include name="verifyMyProfileChangeNameHappyPath"/>
+          <include name="tearDownSuite"/>
+          <include name="before"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="afterMainMethod"/>
+        </methods>
+      </class> <!-- com.vin.testscripts.MyProfileChangeNameHappyPath -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Complete Suite - Suite May 2020] -->

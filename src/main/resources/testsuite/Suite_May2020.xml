@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Complete Suite - Suite May 2020" verbose="5">
+
+    <listeners>
+        <listener class-name="com.vin.report.TestCaseTrackingListners"/>
+    </listeners>
+    
+    <test name="Regression">
+    
+        <parameter name="browser" value="${browser}"/>
+        <classes>
+            
+            
+            <class name="com.vin.testscripts.FleaandTickProductFinderHappyPath"/>
+            <class name="com.vin.testscripts.ProfileLicensureHappyPath"/>
+            <class name="com.vin.testscripts.CalorieDistributionCalculatorHappyPath"/>
+            <class name="com.vin.testscripts.EnergyRequirementsHappyPath"/>
+            <class name="com.vin.testscripts.FreeWaterDeficitHappyPath"/>
+            <class name="com.vin.testscripts.GestationCatHappyPath"/>
+            <class name="com.vin.testscripts.FluidTherapyHappyPath"/>
+            <class name="com.vin.testscripts.TopicalTherapyHappyPath"/>  
+            <class name="com.vin.testscripts.PremedicationDogDrugHappyPath"/>
+            <class name="com.vin.testscripts.PremedicationCatDrugHappyPath"/>
+            <class name="com.vin.testscripts.HeartwormHappyPath"/>
+            <class name="com.vin.testscripts.eVetSitesHappyPath"/>
+            <class name="com.vin.testscripts.VINxHappyPath"/>
+            <class name="com.vin.testscripts.PublicNewsHappyPath"/>
+            <class name="com.vin.testscripts.VINPromoPageOther"/>
+            <class name="com.vin.testscripts.CECourseInfoHappyPath"/>
+            <class name="com.vin.testscripts.MyActivitiesHappyPath"/>
+            <class name="com.vin.testscripts.MeanElectricalAxisHappyPath"/>
+            <class name="com.vin.testscripts.DiscussionViewerHappyPath"/>
+            <class name="com.vin.testscripts.IsleHappyPath"/>
+            <class name="com.vin.testscripts.GlucosePlotterDogHappyPath"/>
+            <class name="com.vin.testscripts.GlucosePlotterCatHappyPath"/>
+            <class name="com.vin.testscripts.VSPNFrontPageHappyPath"/>
+            <class name="com.vin.testscripts.MyVINPreferencesGeneralOnePass"/>
+            <class name="com.vin.testscripts.MyVINProfileemailAndwebsiteHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfilePhoneAndFaxHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfileAddressHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfileCertificationsAndHonorsHappyPath"/>
+            <class name="com.vin.testscripts.MyVINProfileInterestsHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileChangeNameHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileHappyPath"/>
+            <class name="com.vin.testscripts.MyProfilePostGraduateTrainingHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileEducationHappyPath"/>
+            <class name="com.vin.testscripts.MyProfileLicensureHappyPath"/>
+            <class name="com.vin.testscripts.NSAIDHappyPath"/> 
+            <class name="com.vin.testscripts.CourseMainPageHappyPath"/>
+            <class name="com.vin.testscripts.Presenter4Menu"/>
+            <class name="com.vin.testscripts.PreferencesEmailOnePass"/>
+            <class name="com.vin.testscripts.PreferencesSignatureOnePass"/>
+            <class name="com.vin.testscripts.PreferencesBoardsOnePass"/>
+            <class name="com.vin.testscripts.DocDeliveryHappyPath"/>
+            
+            
+            
+            
+            
+         
+         
+        </classes>
+    </test>
+</suite>
